@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:mainboard
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -16,7 +15,7 @@ Comment4 ""
 $EndDescr
 Wire Wire Line
 	3600 2800 3600 2900
-Text GLabel 3600 2800 0    10   BiDi ~ 0
+Text GLabel 3600 2800 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	7200 3300 7200 3200
@@ -27,19 +26,19 @@ Wire Wire Line
 Wire Wire Line
 	6900 3300 7200 3300
 Connection ~ 7200 3300
-Text GLabel 7200 3300 0    10   BiDi ~ 0
+Text GLabel 7200 3300 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	8100 2500 7900 2500
-Text GLabel 8100 2500 0    10   BiDi ~ 0
+Text GLabel 8100 2500 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	3300 1400 3500 1400
-Text GLabel 3300 1400 0    10   BiDi ~ 0
+Text GLabel 3300 1400 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	3900 2800 3900 2900
-Text GLabel 3900 2800 0    10   BiDi ~ 0
+Text GLabel 3900 2800 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	5600 2500 5700 2500
@@ -55,7 +54,7 @@ Wire Wire Line
 	5700 2900 5700 3300
 Connection ~ 5700 2700
 Connection ~ 5700 2900
-Text GLabel 5600 2500 0    10   BiDi ~ 0
+Text GLabel 5600 2500 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	3900 5500 3900 5400
@@ -64,7 +63,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 5400 3900 5400
 Connection ~ 3900 5400
-Text GLabel 3900 5500 0    10   BiDi ~ 0
+Text GLabel 3900 5500 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	6100 7100 6100 6900
@@ -79,7 +78,7 @@ Wire Wire Line
 Connection ~ 6100 6900
 Connection ~ 6100 6400
 Connection ~ 6300 7100
-Text GLabel 6100 7100 0    10   BiDi ~ 0
+Text GLabel 6100 7100 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	2900 6700 2900 6900
@@ -95,7 +94,7 @@ Wire Wire Line
 	1900 6900 1900 6800
 Connection ~ 2900 6900
 Connection ~ 2300 6900
-Text GLabel 2900 6700 0    10   BiDi ~ 0
+Text GLabel 2900 6700 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	2900 6000 2600 6000
@@ -112,12 +111,12 @@ Wire Wire Line
 Connection ~ 2600 6000
 Connection ~ 1900 5800
 Connection ~ 2400 5800
-Text GLabel 2900 6000 0    10   BiDi ~ 0
+Text GLabel 2900 6000 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	8650 6200 7950 6200
 Connection ~ 7950 6200
-Text GLabel 8650 6200 0    10   BiDi ~ 0
+Text GLabel 8650 6200 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	1700 5500 1600 5500
@@ -154,7 +153,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 4900 3900 5000
 Connection ~ 3900 5000
-Text GLabel 3900 5100 0    10   BiDi ~ 0
+Text GLabel 3900 5100 0    10   BiDi ~ 2
 3.3V
 Wire Wire Line
 	1400 5800 1400 6100
@@ -166,7 +165,7 @@ Wire Wire Line
 	1900 6100 2100 6100
 Connection ~ 1600 6100
 Connection ~ 1900 6100
-Text GLabel 1400 5800 0    10   BiDi ~ 0
+Text GLabel 1400 5800 0    10   BiDi ~ 2
 3.3V
 Wire Wire Line
 	7300 1600 7300 1500
@@ -175,7 +174,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 1500 7750 1600
 Connection ~ 7750 1500
-Text GLabel 7300 1600 0    10   BiDi ~ 0
+Text GLabel 7300 1600 0    10   BiDi ~ 2
 3.3V
 Wire Wire Line
 	8650 5400 8650 5300
@@ -190,7 +189,7 @@ Text GLabel 5200 7200 0    50   BiDi ~ 0
 3.3V
 Wire Wire Line
 	3300 2300 3200 2300
-Text GLabel 3200 2300 0    70   BiDi ~ 0
+Text GLabel 3200 2300 0    70   BiDi ~ 14
 VSOLAR
 Wire Wire Line
 	3200 5300 3400 5300
@@ -281,7 +280,7 @@ Connection ~ 4600 2300
 Connection ~ 3600 2300
 Wire Wire Line
 	7000 2300 7100 2300
-Text GLabel 8900 2800 2    70   BiDi ~ 0
+Text GLabel 8900 2800 2    70   BiDi ~ 14
 VBATT
 Wire Wire Line
 	1600 5100 1600 4900
@@ -959,13 +958,13 @@ F 3 "" H 1900 6700 50  0001 C CNN
 $EndComp
 Text Notes 2100 4800 0    59   ~ 0
 Battery Current Sensor
-Text Notes 8550 4900 0    85   ~ 0
+Text Notes 8550 4900 0    85   ~ 17
 GPS Power
-Text Notes 4200 1000 0    85   ~ 0
+Text Notes 4200 1000 0    85   ~ 17
 2s2P Li-Ion Battery Charging Circuit
-Text Notes 2800 4400 0    85   ~ 0
+Text Notes 2800 4400 0    85   ~ 17
 Regulator - 3.3V OUT
-Text Notes 1200 6300 0    42   ~ 0
+Text Notes 1900 6500 2    42   ~ 8
 VBATT 4.5 to 18V
 Text Notes 8300 2200 0    59   ~ 0
 PROG\nmonitors charge current using:\nIchrg=988*Vprog/Rprog\n
@@ -1008,11 +1007,8 @@ Wire Wire Line
 	10300 5200 10300 5400
 Wire Wire Line
 	10300 5800 10500 5800
-Connection ~ 10300 5800
-Connection ~ 10300 5400
 Wire Wire Line
 	10300 5400 10300 5600
-Connection ~ 10300 5600
 Wire Wire Line
 	10300 5600 10300 5800
 Wire Wire Line
@@ -1060,7 +1056,7 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/4121fbc
 	1    6100 2400
 	1    0    0    -1  
 $EndComp
-Text Notes 3600 1150 0    85   ~ 0
+Text Notes 3600 1150 0    85   ~ 17
 DNI
 Text GLabel 7400 2050 2    50   Output ~ 0
 ~CHRG

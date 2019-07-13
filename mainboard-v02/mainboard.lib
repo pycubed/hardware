@@ -430,11 +430,11 @@ X SWITCH SW -200 -400 200 R 50 50 1 0 B
 ENDDRAW
 ENDDEF
 #
-# ATSAMD51J20A-AU-ATSAMD51J20A-AU-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue
+# ATSAMD51J20A-AU-ATSAMD51J20A-AU
 #
-DEF ATSAMD51J20A-AU-ATSAMD51J20A-AU-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue U 0 40 Y Y 1 L N
+DEF ATSAMD51J20A-AU-ATSAMD51J20A-AU U 0 40 Y Y 1 L N
 F0 "U" -501 1906 50 H V L BNN
-F1 "ATSAMD51J20A-AU-ATSAMD51J20A-AU-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue" -501 -2003 50 H V L BNN
+F1 "ATSAMD51J20A-AU-ATSAMD51J20A-AU" -501 -2003 50 H V L BNN
 F2 "QFP50P1200X1200X120-64N" 0 0 50 H I L BNN
 F3 "Microchip" 0 0 50 H I L BNN
 F4 "120MHZ 1024KB Flash 64 TQFP PKG inTray 85CTemp, 64 TQFP 10x10x1mm TRAY" 0 0 50 H I L BNN
@@ -556,11 +556,11 @@ X 2 2 0 -100 100 U 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue
+# CAP_CERAMIC0603_NO
 #
-DEF CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue C 0 40 Y Y 1 L N
+DEF CAP_CERAMIC0603_NO C 0 40 Y Y 1 L N
 F0 "C" -90 49 50 V V C CNN
-F1 "CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue" 90 49 50 V V C CNN
+F1 "CAP_CERAMIC0603_NO" 90 49 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -573,11 +573,11 @@ X 2 2 0 -100 100 U 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue
+# CAP_CERAMIC0805-NOOUTLINE
 #
-DEF CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue C 0 40 Y Y 1 L N
+DEF CAP_CERAMIC0805-NOOUTLINE C 0 40 Y Y 1 L N
 F0 "C" -90 49 50 V V C CNN
-F1 "CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue" 90 49 50 V V C CNN
+F1 "CAP_CERAMIC0805-NOOUTLINE" 90 49 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -693,11 +693,11 @@ X GND 1 0 100 100 D 0 0 1 0 W
 ENDDRAW
 ENDDEF
 #
-# INDUCTOR-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue
+# INDUCTOR
 #
-DEF INDUCTOR-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue L 0 40 Y Y 1 L N
+DEF INDUCTOR L 0 40 Y Y 1 L N
 F0 "L" 0 100 42 H V C CNN
-F1 "INDUCTOR-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue" 0 -60 42 H V C CNN
+F1 "INDUCTOR" 0 -60 42 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -771,11 +771,11 @@ X 3 3 0 -200 100 U 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# LED0805_NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue
+# LED0805_NOOUTLINE
 #
-DEF LED0805_NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue D 0 40 Y Y 1 L N
+DEF LED0805_NOOUTLINE D 0 40 Y Y 1 L N
 F0 "D" -50 175 42 H V C CNN
-F1 "LED0805_NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue" -50 -110 42 H V C CNN
+F1 "LED0805_NOOUTLINE" -50 -110 42 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -1092,11 +1092,11 @@ X NC@9 9 700 300 200 L 50 50 1 0 B
 ENDDRAW
 ENDDEF
 #
-# SWITCH_TACT_SMT4.6X2.8-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue
+# SWITCH_TACT_SMT4.6X2.8
 #
-DEF SWITCH_TACT_SMT4.6X2.8-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue SW 0 40 Y Y 1 L N
+DEF SWITCH_TACT_SMT4.6X2.8 SW 0 40 Y Y 1 L N
 F0 "SW" -100 250 42 H V L BNN
-F1 "SWITCH_TACT_SMT4.6X2.8-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue" -100 -200 42 H V L BNN
+F1 "SWITCH_TACT_SMT4.6X2.8" -100 -200 42 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

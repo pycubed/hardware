@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:mainboard
 EELAYER 29 0
 EELAYER END
 $Descr User 11693 8548
@@ -17,67 +16,67 @@ $EndDescr
 Wire Wire Line
 	6000 1700 6300 1700
 Connection ~ 6000 1700
-Text GLabel 6000 1700 0    10   BiDi ~ 0
+Text GLabel 6000 1700 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	6300 2650 6000 2650
 Wire Wire Line
 	6000 2650 6000 2750
 Connection ~ 6000 2650
-Text GLabel 6300 2650 0    10   BiDi ~ 0
+Text GLabel 6300 2650 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	6400 4300 6100 4300
 Connection ~ 6100 4300
-Text GLabel 6400 4300 0    10   BiDi ~ 0
+Text GLabel 6400 4300 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	6100 5150 6400 5150
 Connection ~ 6100 5150
-Text GLabel 6100 5150 0    10   BiDi ~ 0
+Text GLabel 6100 5150 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	6100 6000 6400 6000
 Connection ~ 6100 6000
-Text GLabel 6100 6000 0    10   BiDi ~ 0
+Text GLabel 6100 6000 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	8600 2350 8900 2350
-Text GLabel 8600 2350 0    10   BiDi ~ 0
+Text GLabel 8600 2350 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	8700 4000 9000 4000
-Text GLabel 8700 4000 0    10   BiDi ~ 0
+Text GLabel 8700 4000 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	5300 7400 5400 7400
 Wire Wire Line
 	5400 7400 5400 7500
-Text GLabel 5300 7400 0    10   BiDi ~ 0
+Text GLabel 5300 7400 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	2000 7500 2000 7400
 Wire Wire Line
 	2000 7400 1900 7400
-Text GLabel 2000 7500 0    10   BiDi ~ 0
+Text GLabel 2000 7500 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	3500 7400 3600 7400
 Wire Wire Line
 	3600 7400 3600 7500
-Text GLabel 3500 7400 0    10   BiDi ~ 0
+Text GLabel 3500 7400 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	8600 1400 8900 1400
-Text GLabel 8600 1400 0    10   BiDi ~ 0
+Text GLabel 8600 1400 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	8700 4850 9000 4850
-Text GLabel 8700 4850 0    10   BiDi ~ 0
+Text GLabel 8700 4850 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	8700 5700 9000 5700
-Text GLabel 8700 5700 0    10   BiDi ~ 0
+Text GLabel 8700 5700 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	2300 2200 2300 2100
@@ -86,7 +85,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 2100 2300 2100
 Connection ~ 2300 2100
-Text GLabel 2300 2200 0    10   BiDi ~ 0
+Text GLabel 2300 2200 0    10   BiDi ~ 2
 GND
 Wire Wire Line
 	2100 4700 2400 4700
@@ -95,7 +94,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 4500 2400 4700
 Connection ~ 2400 4700
-Text GLabel 2100 4700 0    10   BiDi ~ 0
+Text GLabel 2100 4700 0    10   BiDi ~ 2
 GND
 Text Label 8500 4000 2    50   ~ 0
 VBURN3
@@ -940,19 +939,19 @@ F 3 "" H 2400 4000 50  0001 C CNN
 	1    2400 4000
 	0    -1   -1   0   
 $EndComp
-Text Notes 2700 1900 0    85   ~ 0
+Text Notes 2700 1900 0    85   ~ 17
 Power Relay A
-Text Notes 4500 800  0    85   ~ 0
+Text Notes 4500 800  0    85   ~ 17
 Burn Wire Control (Antenna Depolyment)
-Text Notes 4500 3300 0    85   ~ 0
+Text Notes 4500 3300 0    85   ~ 17
 Burn Wire Control (Sprite deployment)
-Text Notes 2800 4600 0    85   ~ 0
+Text Notes 2800 4600 0    85   ~ 17
 Power Relay B
-Text Notes 8200 1150 0    85   ~ 0
+Text Notes 8200 1150 0    85   ~ 17
 Antenna Board\nConnectors
-Text Notes 8300 3800 0    85   ~ 0
+Text Notes 8300 3800 0    85   ~ 17
 Solar Panel Board\nConnectors
-Text Notes 3000 6700 0    85   ~ 0
+Text Notes 3000 6700 0    85   ~ 17
 Solar Panel Connectors
 Wire Wire Line
 	1900 4300 2100 4300

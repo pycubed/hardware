@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:mainboard
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -44,8 +43,4 @@ U 5CEC6476
 F0 "Burn Wires" 50
 F1 "Burn_Wires.sch" 50
 $EndSheet
-Text Notes 1850 1850 0    100  ~ 0
-TO DO
-Text Notes 1850 2550 0    100  ~ 0
-DRDY pins on XTB\nADD BREAKOUT AREA\nCONFIRM GPS SCHEME\n\n
 $EndSCHEMATC
