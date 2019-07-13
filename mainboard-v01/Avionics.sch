@@ -1303,4 +1303,6 @@ Text Notes 3400 6100 0    85   ~ 0
 ADDRESS = 0x21
 Wire Notes Line
 	5700 700  5700 8000
+Text Notes 9200 7600 0    200  ~ 0
+Avionics
 $EndSCHEMATC

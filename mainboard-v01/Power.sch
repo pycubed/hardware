@@ -1077,4 +1077,6 @@ Wire Wire Line
 Connection ~ 10300 5600
 Wire Wire Line
 	10300 5600 10300 5800
+Text Notes 8950 6950 0    200  ~ 0
+Power
 $EndSCHEMATC

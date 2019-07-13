@@ -537,4 +537,6 @@ $EndComp
 Wire Wire Line
 	6800 3100 7000 3100
 Connection ~ 7000 3100
+Text Notes 8600 7600 0    200  ~ 0
+Connectors
 $EndSCHEMATC
