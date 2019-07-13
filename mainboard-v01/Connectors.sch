@@ -1,0 +1,540 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr User 11693 8851
+encoding utf-8
+Sheet 4 6
+Title "PyCubed Mainboard"
+Date ""
+Rev "v01"
+Comp "Stanford University"
+Comment1 "rexlab.stanford.edu"
+Comment2 "Max Holliday"
+Comment3 "Zac Manchester"
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	7900 5200 7900 5300
+Text GLabel 7900 5200 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	7000 3700 7000 3500
+Text GLabel 7000 3700 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	6400 3300 6400 3400
+Text GLabel 6400 3300 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	2900 2400 3000 2400
+Wire Wire Line
+	3000 2400 3000 2500
+Text GLabel 2900 2400 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	2900 1700 3600 1700
+Wire Wire Line
+	3600 1700 3600 2500
+Text GLabel 2900 1700 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	2300 4700 2300 4800
+Text GLabel 2300 4700 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	3500 4800 3500 4900
+Text GLabel 3500 4800 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	2100 7300 2400 7300
+Text GLabel 2100 7300 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	8700 4400 8700 4200
+Wire Wire Line
+	8700 4200 9400 4200
+Wire Wire Line
+	9400 4200 9400 4400
+Wire Wire Line
+	9500 4400 9500 3900
+Wire Wire Line
+	9500 3900 9800 3900
+Wire Wire Line
+	9800 3100 9500 3100
+Wire Wire Line
+	9500 3100 9500 3900
+Text GLabel 9800 3900 2    50   BiDi ~ 0
+VBATT
+Connection ~ 9500 3900
+Wire Wire Line
+	2900 1500 3600 1500
+Wire Wire Line
+	3600 1500 3600 1300
+Text GLabel 2900 1500 0    10   BiDi ~ 0
+3.3V
+Wire Wire Line
+	2400 6700 2100 6700
+Wire Wire Line
+	2100 6700 2100 6500
+Text GLabel 2400 6700 0    10   BiDi ~ 0
+3.3V
+Wire Wire Line
+	3500 4400 3600 4400
+Wire Wire Line
+	3600 4400 3600 4300
+Text GLabel 3500 4400 0    10   BiDi ~ 0
+3.3V
+Wire Wire Line
+	3200 7000 2800 7000
+Text GLabel 3200 7000 0    50   BiDi ~ 0
+SWCLK
+Wire Wire Line
+	3200 6700 2800 6700
+Text GLabel 3200 6700 0    50   BiDi ~ 0
+SWDIO
+Wire Wire Line
+	2800 7300 3200 7300
+Text GLabel 3200 7300 0    50   BiDi ~ 0
+~RESET
+Wire Wire Line
+	5400 3100 5300 3100
+Text GLabel 5300 3100 0    50   BiDi ~ 0
+USB_D+
+Wire Wire Line
+	5400 3200 5300 3200
+Text GLabel 5300 3200 0    50   BiDi ~ 0
+USB_D-
+Wire Wire Line
+	6400 3100 6500 3100
+Wire Wire Line
+	8600 4400 8600 3800
+Wire Wire Line
+	7800 4400 8600 4400
+Wire Wire Line
+	7800 3800 8600 3800
+Wire Wire Line
+	8600 3100 8600 3800
+Wire Wire Line
+	7000 3200 7000 3100
+Wire Wire Line
+	7000 3100 8600 3100
+Connection ~ 8600 3800
+Text Label 8600 4100 2    50   ~ 0
+VBATT_IN
+Connection ~ 8600 4400
+Wire Wire Line
+	2900 1400 3000 1400
+Text GLabel 3000 1400 2    50   BiDi ~ 0
+SPI_MOSI
+Wire Wire Line
+	3500 4700 3600 4700
+Text GLabel 3600 4700 2    50   BiDi ~ 0
+SPI_MOSI
+Wire Wire Line
+	2900 1800 3000 1800
+Text GLabel 3000 1800 2    50   BiDi ~ 0
+SPI_MISO
+Wire Wire Line
+	2300 4500 2200 4500
+Text GLabel 2200 4500 0    50   BiDi ~ 0
+SPI_MISO
+Wire Wire Line
+	2900 1600 3000 1600
+Text GLabel 3000 1600 2    50   BiDi ~ 0
+SPI_SCK
+Wire Wire Line
+	3500 4600 3600 4600
+Text GLabel 3600 4600 2    50   BiDi ~ 0
+SPI_SCK
+Wire Wire Line
+	2900 1300 3000 1300
+Text GLabel 3000 1300 2    50   BiDi ~ 0
+SPI_CS_SD
+Wire Wire Line
+	9800 3300 9800 3200
+Wire Wire Line
+	7900 5100 7900 4500
+Wire Wire Line
+	7900 4500 7800 4500
+Wire Wire Line
+	7800 3900 7900 3900
+Wire Wire Line
+	7900 3900 7900 4500
+Wire Wire Line
+	7900 3900 7900 3200
+Wire Wire Line
+	9800 3200 7900 3200
+Connection ~ 7900 4500
+Connection ~ 7900 3900
+Connection ~ 9800 3200
+Wire Wire Line
+	2300 4400 2200 4400
+Text GLabel 2200 4400 0    50   BiDi ~ 0
+SPI_CS_MRAM
+$Comp
+L mainboard:M023.5MM_LOCK JP11
+U 1 0 1D5F55F3
+P 7500 3800
+AR Path="/1D5F55F3" Ref="JP11"  Part="1" 
+AR Path="/5CEC60EB/1D5F55F3" Ref="JP11"  Part="1" 
+F 0 "JP11" H 7400 4030 59  0000 L BNN
+F 1 "M023.5MM_LOCK" H 7400 3600 59  0000 L BNN
+F 2 "mainboard:SCREWTERMINAL-3.5MM-2_LOCK" H 7500 3800 50  0001 C CNN
+F 3 "" H 7500 3800 50  0001 C CNN
+	1    7500 3800
+	1    0    0    1   
+$EndComp
+$Comp
+L mainboard:M023.5MM_LOCK JP10
+U 1 0 55623696
+P 7500 4400
+AR Path="/55623696" Ref="JP10"  Part="1" 
+AR Path="/5CEC60EB/55623696" Ref="JP10"  Part="1" 
+F 0 "JP10" H 7400 4630 59  0000 L BNN
+F 1 "M023.5MM_LOCK" H 7400 4200 59  0000 L BNN
+F 2 "mainboard:SCREWTERMINAL-3.5MM-2_LOCK" H 7500 4400 50  0001 C CNN
+F 3 "" H 7500 4400 50  0001 C CNN
+	1    7500 4400
+	1    0    0    1   
+$EndComp
+$Comp
+L mainboard:M023.5MM_LOCK JP13
+U 1 0 6F37A4EE
+P 8700 4700
+AR Path="/6F37A4EE" Ref="JP13"  Part="1" 
+AR Path="/5CEC60EB/6F37A4EE" Ref="JP13"  Part="1" 
+F 0 "JP13" H 8600 4930 59  0000 L BNN
+F 1 "M023.5MM_LOCK" H 8600 4500 59  0000 L BNN
+F 2 "mainboard:SCREWTERMINAL-3.5MM-2_LOCK" H 8700 4700 50  0001 C CNN
+F 3 "" H 8700 4700 50  0001 C CNN
+	1    8700 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard:M023.5MM_LOCK JP16
+U 1 0 AFB05DD6
+P 9500 4700
+AR Path="/AFB05DD6" Ref="JP16"  Part="1" 
+AR Path="/5CEC60EB/AFB05DD6" Ref="JP16"  Part="1" 
+F 0 "JP16" H 9400 4930 59  0000 L BNN
+F 1 "M023.5MM_LOCK" H 9400 4500 59  0000 L BNN
+F 2 "mainboard:SCREWTERMINAL-3.5MM-2_LOCK" H 9500 4700 50  0001 C CNN
+F 3 "" H 9500 4700 50  0001 C CNN
+	1    9500 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard:M023.5MM_LOCK JP12
+U 1 0 EDD14CA3
+P 8200 5100
+AR Path="/EDD14CA3" Ref="JP12"  Part="1" 
+AR Path="/5CEC60EB/EDD14CA3" Ref="JP12"  Part="1" 
+F 0 "JP12" H 8100 5330 59  0000 L BNN
+F 1 "M023.5MM_LOCK" H 8100 4900 59  0000 L BNN
+F 2 "mainboard:SCREWTERMINAL-3.5MM-2_LOCK" H 8200 5100 50  0001 C CNN
+F 3 "" H 8200 5100 50  0001 C CNN
+	1    8200 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard:GND #GND37
+U 1 0 A56E8B01
+P 7900 5400
+AR Path="/A56E8B01" Ref="#GND37"  Part="1" 
+AR Path="/5CEC60EB/A56E8B01" Ref="#GND037"  Part="1" 
+F 0 "#GND037" H 7900 5400 50  0001 C CNN
+F 1 "GND" H 7800 5300 59  0000 L BNN
+F 2 "" H 7900 5400 50  0001 C CNN
+F 3 "" H 7900 5400 50  0001 C CNN
+	1    7900 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:GND #GND34
+U 1 0 85A992D2
+P 7000 3800
+AR Path="/85A992D2" Ref="#GND34"  Part="1" 
+AR Path="/5CEC60EB/85A992D2" Ref="#GND034"  Part="1" 
+F 0 "#GND034" H 7000 3800 50  0001 C CNN
+F 1 "GND" H 6900 3700 59  0000 L BNN
+F 2 "" H 7000 3800 50  0001 C CNN
+F 3 "" H 7000 3800 50  0001 C CNN
+	1    7000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:2.2UF-0603-10V-20% C27
+U 1 0 A4D44B7E
+P 7000 3400
+AR Path="/A4D44B7E" Ref="C27"  Part="1" 
+AR Path="/5CEC60EB/A4D44B7E" Ref="C27"  Part="1" 
+F 0 "C27" H 7060 3515 70  0000 L BNN
+F 1 "2.2uF" H 7060 3315 70  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7000 3400 50  0001 C CNN
+F 3 "" H 7000 3400 50  0001 C CNN
+	1    7000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:10118194-0001LF J2
+U 1 0 C3E76336
+P 5900 3200
+AR Path="/C3E76336" Ref="J2"  Part="1" 
+AR Path="/5CEC60EB/C3E76336" Ref="J2"  Part="1" 
+F 0 "J2" H 5609 3420 42  0000 L BNN
+F 1 "10118194-0001LF" H 5599 2899 42  0000 L BNN
+F 2 "mainboard:FRAMATOME_10118194-0001LF" H 5900 3200 50  0001 C CNN
+F 3 "" H 5900 3200 50  0001 C CNN
+	1    5900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:GND #GND33
+U 1 0 C5585B8D
+P 6400 3500
+AR Path="/C5585B8D" Ref="#GND33"  Part="1" 
+AR Path="/5CEC60EB/C5585B8D" Ref="#GND033"  Part="1" 
+F 0 "#GND033" H 6400 3500 50  0001 C CNN
+F 1 "GND" H 6300 3400 59  0000 L BNN
+F 2 "" H 6400 3500 50  0001 C CNN
+F 3 "" H 6400 3500 50  0001 C CNN
+	1    6400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:503182-1852 J1
+U 1 0 449C7C68
+P 2700 1800
+AR Path="/449C7C68" Ref="J1"  Part="1" 
+AR Path="/5CEC60EB/449C7C68" Ref="J1"  Part="1" 
+F 0 "J1" H 2700 2523 85  0000 L BNN
+F 1 "503182-1852" H 2700 976 85  0000 L BNN
+F 2 "mainboard:MOLEX_503182-1852" H 2700 1800 50  0001 C CNN
+F 3 "" H 2700 1800 50  0001 C CNN
+	1    2700 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mainboard:GND #GND28
+U 1 0 D1DF28FE
+P 3000 2600
+AR Path="/D1DF28FE" Ref="#GND28"  Part="1" 
+AR Path="/5CEC60EB/D1DF28FE" Ref="#GND028"  Part="1" 
+F 0 "#GND028" H 3000 2600 50  0001 C CNN
+F 1 "GND" H 2900 2500 59  0000 L BNN
+F 2 "" H 3000 2600 50  0001 C CNN
+F 3 "" H 3000 2600 50  0001 C CNN
+	1    3000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:GND #GND29
+U 1 0 B0E7A0AF
+P 3600 2600
+AR Path="/B0E7A0AF" Ref="#GND29"  Part="1" 
+AR Path="/5CEC60EB/B0E7A0AF" Ref="#GND029"  Part="1" 
+F 0 "#GND029" H 3600 2600 50  0001 C CNN
+F 1 "GND" H 3500 2500 59  0000 L BNN
+F 2 "" H 3600 2600 50  0001 C CNN
+F 3 "" H 3600 2600 50  0001 C CNN
+	1    3600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:3.3V #SUPPLY11
+U 1 0 E0B04C0E
+P 3600 1300
+AR Path="/E0B04C0E" Ref="#SUPPLY11"  Part="1" 
+AR Path="/5CEC60EB/E0B04C0E" Ref="#SUPPLY011"  Part="1" 
+F 0 "#SUPPLY011" H 3600 1300 50  0001 C CNN
+F 1 "3.3V" H 3560 1440 59  0000 L BNN
+F 2 "" H 3600 1300 50  0001 C CNN
+F 3 "" H 3600 1300 50  0001 C CNN
+	1    3600 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:DCJ0303 J3
+U 1 0 B665FDA9
+P 10100 3200
+AR Path="/B665FDA9" Ref="J3"  Part="1" 
+AR Path="/5CEC60EB/B665FDA9" Ref="J3"  Part="1" 
+F 0 "J3" H 10000 3350 59  0000 L BNN
+F 1 "DCJ0303" H 10000 2950 59  0000 L BNN
+F 2 "mainboard:DCJ0303" H 10100 3200 50  0001 C CNN
+F 3 "" H 10100 3200 50  0001 C CNN
+	1    10100 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mainboard:PINHD-1X1 JP25
+U 1 0 55E19E0D
+P 2700 6700
+AR Path="/55E19E0D" Ref="JP25"  Part="1" 
+AR Path="/5CEC60EB/55E19E0D" Ref="JP25"  Part="1" 
+F 0 "JP25" H 2450 6825 59  0000 L BNN
+F 1 "PINHD-1X1" H 2450 6500 59  0000 L BNN
+F 2 "mainboard:1X01" H 2700 6700 50  0001 C CNN
+F 3 "" H 2700 6700 50  0001 C CNN
+	1    2700 6700
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard:PINHD-1X1 JP26
+U 1 0 9A366D87
+P 2700 7000
+AR Path="/9A366D87" Ref="JP26"  Part="1" 
+AR Path="/5CEC60EB/9A366D87" Ref="JP26"  Part="1" 
+F 0 "JP26" H 2450 7125 59  0000 L BNN
+F 1 "PINHD-1X1" H 2450 6800 59  0000 L BNN
+F 2 "mainboard:1X01" H 2700 7000 50  0001 C CNN
+F 3 "" H 2700 7000 50  0001 C CNN
+	1    2700 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard:PINHD-1X1 JP27
+U 1 0 33E2AACD
+P 2700 7300
+AR Path="/33E2AACD" Ref="JP27"  Part="1" 
+AR Path="/5CEC60EB/33E2AACD" Ref="JP27"  Part="1" 
+F 0 "JP27" H 2450 7425 59  0000 L BNN
+F 1 "PINHD-1X1" H 2450 7100 59  0000 L BNN
+F 2 "mainboard:1X01" H 2700 7300 50  0001 C CNN
+F 3 "" H 2700 7300 50  0001 C CNN
+	1    2700 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard:PINHD-1X1 3.3V
+U 1 0 7808B3E9
+P 2500 6700
+AR Path="/7808B3E9" Ref="3.3V"  Part="1" 
+AR Path="/5CEC60EB/7808B3E9" Ref="3.3V1"  Part="1" 
+F 0 "3.3V1" H 2250 6825 59  0000 L BNN
+F 1 "PINHD-1X1" H 2250 6500 59  0000 L BNN
+F 2 "mainboard:1X01" H 2500 6700 50  0001 C CNN
+F 3 "" H 2500 6700 50  0001 C CNN
+	1    2500 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:3.3V #SUPPLY12
+U 1 0 31C2C8A5
+P 2100 6500
+AR Path="/31C2C8A5" Ref="#SUPPLY12"  Part="1" 
+AR Path="/5CEC60EB/31C2C8A5" Ref="#SUPPLY012"  Part="1" 
+F 0 "#SUPPLY012" H 2100 6500 50  0001 C CNN
+F 1 "3.3V" H 2060 6640 59  0000 L BNN
+F 2 "" H 2100 6500 50  0001 C CNN
+F 3 "" H 2100 6500 50  0001 C CNN
+	1    2100 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:MR25H40MDF U20
+U 1 0 4AD49080
+P 2300 4400
+AR Path="/4AD49080" Ref="U20"  Part="1" 
+AR Path="/5CEC60EB/4AD49080" Ref="U20"  Part="1" 
+F 0 "U20" H 2750 4700 59  0000 L CNN
+F 1 "MR25H40MDF" H 2750 4600 59  0000 L CNN
+F 2 "mainboard:SON127P600X500X90-9N" H 2300 4400 50  0001 C CNN
+F 3 "" H 2300 4400 50  0001 C CNN
+	1    2300 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:3.3V #SUPPLY13
+U 1 0 8D803956
+P 3600 4300
+AR Path="/8D803956" Ref="#SUPPLY13"  Part="1" 
+AR Path="/5CEC60EB/8D803956" Ref="#SUPPLY013"  Part="1" 
+F 0 "#SUPPLY013" H 3600 4300 50  0001 C CNN
+F 1 "3.3V" H 3560 4440 59  0000 L BNN
+F 2 "" H 3600 4300 50  0001 C CNN
+F 3 "" H 3600 4300 50  0001 C CNN
+	1    3600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:GND #GND41
+U 1 0 057C4BD5
+P 2300 4900
+AR Path="/057C4BD5" Ref="#GND41"  Part="1" 
+AR Path="/5CEC60EB/057C4BD5" Ref="#GND041"  Part="1" 
+F 0 "#GND041" H 2300 4900 50  0001 C CNN
+F 1 "GND" H 2200 4800 59  0000 L BNN
+F 2 "" H 2300 4900 50  0001 C CNN
+F 3 "" H 2300 4900 50  0001 C CNN
+	1    2300 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:GND #GND42
+U 1 0 6D21A43A
+P 3500 5000
+AR Path="/6D21A43A" Ref="#GND42"  Part="1" 
+AR Path="/5CEC60EB/6D21A43A" Ref="#GND042"  Part="1" 
+F 0 "#GND042" H 3500 5000 50  0001 C CNN
+F 1 "GND" H 3400 4900 59  0000 L BNN
+F 2 "" H 3500 5000 50  0001 C CNN
+F 3 "" H 3500 5000 50  0001 C CNN
+	1    3500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:PINHD-1X1 GND
+U 1 0 D5DABBF3
+P 2500 7300
+AR Path="/D5DABBF3" Ref="GND"  Part="1" 
+AR Path="/5CEC60EB/D5DABBF3" Ref="GND1"  Part="1" 
+F 0 "GND1" H 2250 7425 59  0000 L BNN
+F 1 "PINHD-1X1" H 2250 7100 59  0000 L BNN
+F 2 "mainboard:1X01" H 2500 7300 50  0001 C CNN
+F 3 "" H 2500 7300 50  0001 C CNN
+	1    2500 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:GND #GND59
+U 1 0 ACBC2CBC
+P 2100 7400
+AR Path="/ACBC2CBC" Ref="#GND59"  Part="1" 
+AR Path="/5CEC60EB/ACBC2CBC" Ref="#GND059"  Part="1" 
+F 0 "#GND059" H 2100 7400 50  0001 C CNN
+F 1 "GND" H 2000 7300 59  0000 L BNN
+F 2 "" H 2100 7400 50  0001 C CNN
+F 3 "" H 2100 7400 50  0001 C CNN
+	1    2100 7400
+	1    0    0    -1  
+$EndComp
+Text Notes 8700 5000 0    59   ~ 0
+Footswitch Connections
+Text Notes 7500 3500 0    59   ~ 0
+Battery Terminals
+Text Notes 7200 5300 0    59   ~ 0
+Rail Switch\nConnection
+Text Notes 2600 6100 0    85   ~ 0
+JTAG
+Text Notes 6400 2500 0    85   ~ 0
+Power Connectors: USB, Barrel Plug, Battery
+Text Notes 2400 900  0    85   ~ 0
+MicroSD Card
+Text Notes 1900 3400 0    100  ~ 0
+MRAM - Nonvolatile Memory\n     (4MB storage)
+$Comp
+L Diode:MBR340 D5
+U 1 1 5D035F2A
+P 6650 3100
+F 0 "D5" H 6650 2884 50  0000 C CNN
+F 1 "MBR120" H 6650 2975 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 6650 2925 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/MBR340-D.PDF" H 6650 3100 50  0001 C CNN
+	1    6650 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6800 3100 7000 3100
+Connection ~ 7000 3100
+$EndSCHEMATC
