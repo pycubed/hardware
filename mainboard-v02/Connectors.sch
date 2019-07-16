@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:mainboard-cache
 EELAYER 29 0
 EELAYER END
 $Descr User 11693 8851
@@ -15,35 +16,35 @@ Comment4 ""
 $EndDescr
 Wire Wire Line
 	7900 5200 7900 5300
-Text GLabel 7900 5200 0    10   BiDi ~ 2
+Text GLabel 7900 5200 0    10   BiDi ~ 0
 GND
 Wire Wire Line
 	7000 3700 7000 3500
-Text GLabel 7000 3700 0    10   BiDi ~ 2
+Text GLabel 7000 3700 0    10   BiDi ~ 0
 GND
 Wire Wire Line
 	6400 3300 6400 3400
-Text GLabel 6400 3300 0    10   BiDi ~ 2
+Text GLabel 6400 3300 0    10   BiDi ~ 0
 GND
 Wire Wire Line
 	2900 2400 3000 2400
 Wire Wire Line
 	3000 2400 3000 2500
-Text GLabel 2900 2400 0    10   BiDi ~ 2
+Text GLabel 2900 2400 0    10   BiDi ~ 0
 GND
 Wire Wire Line
 	2900 1700 3600 1700
 Wire Wire Line
 	3600 1700 3600 2500
-Text GLabel 2900 1700 0    10   BiDi ~ 2
+Text GLabel 2900 1700 0    10   BiDi ~ 0
 GND
 Wire Wire Line
 	2300 4700 2300 4800
-Text GLabel 2300 4700 0    10   BiDi ~ 2
+Text GLabel 2300 4700 0    10   BiDi ~ 0
 GND
 Wire Wire Line
 	3500 4800 3500 4900
-Text GLabel 3500 4800 0    10   BiDi ~ 2
+Text GLabel 3500 4800 0    10   BiDi ~ 0
 GND
 Wire Wire Line
 	8700 4400 8700 4200
@@ -66,13 +67,13 @@ Wire Wire Line
 	2900 1500 3600 1500
 Wire Wire Line
 	3600 1500 3600 1300
-Text GLabel 2900 1500 0    10   BiDi ~ 2
+Text GLabel 2900 1500 0    10   BiDi ~ 0
 3.3V
 Wire Wire Line
 	3500 4400 3600 4400
 Wire Wire Line
 	3600 4400 3600 4100
-Text GLabel 3500 4400 0    10   BiDi ~ 2
+Text GLabel 3500 4400 0    10   BiDi ~ 0
 3.3V
 Text GLabel 2550 6650 0    50   BiDi ~ 0
 SWCLK
@@ -390,13 +391,13 @@ Text Notes 7500 3500 0    59   ~ 0
 Battery Terminals
 Text Notes 7200 5300 0    59   ~ 0
 Rail Switch\nConnection
-Text Notes 2600 6100 0    85   ~ 17
+Text Notes 2600 6100 0    85   ~ 0
 JTAG
-Text Notes 6400 2500 0    85   ~ 17
+Text Notes 6400 2500 0    85   ~ 0
 Power Connectors: USB, Barrel Plug, Battery
-Text Notes 2400 900  0    85   ~ 17
+Text Notes 2400 900  0    85   ~ 0
 MicroSD Card
-Text Notes 1900 3400 0    100  ~ 20
+Text Notes 1900 3800 0    100  ~ 0
 MRAM - Nonvolatile Memory\n     (4MB storage)
 $Comp
 L Diode:MBR340 D3
@@ -414,7 +415,7 @@ Wire Wire Line
 Connection ~ 7000 3100
 Wire Wire Line
 	2550 6450 2750 6450
-Text GLabel 2550 6850 0    10   BiDi ~ 2
+Text GLabel 2550 6850 0    10   BiDi ~ 0
 GND
 $Comp
 L mainboard:GND #GND?
@@ -442,7 +443,7 @@ F 3 "~" H 2950 6650 50  0001 C CNN
 	1    2950 6650
 	1    0    0    -1  
 $EndComp
-Text GLabel 2550 6750 0    46   Input ~ 9
+Text GLabel 2550 6750 0    46   Input ~ 0
 ~RESET
 Wire Wire Line
 	2750 6550 2550 6550
@@ -499,7 +500,7 @@ F 3 "" H 4500 4500 50  0001 C CNN
 	1    4500 4500
 	1    0    0    -1  
 $EndComp
-Text GLabel 3850 4400 2    10   BiDi ~ 2
+Text GLabel 3850 4400 2    10   BiDi ~ 0
 GND
 $Comp
 L mainboard:3.3V #SUPPLY?
@@ -514,4 +515,14 @@ F 3 "" H 2550 6450 50  0001 C CNN
 	1    2550 6450
 	1    0    0    -1  
 $EndComp
+Text GLabel 3650 4500 2    59   BiDi ~ 0
+FLASH_IO3
+Wire Wire Line
+	3650 4500 3500 4500
+Text GLabel 2150 4600 0    59   BiDi ~ 0
+FLASH_IO2
+Wire Wire Line
+	2150 4600 2300 4600
+Text Notes 10350 7600 2    200  ~ 0
+Connectors
 $EndSCHEMATC
