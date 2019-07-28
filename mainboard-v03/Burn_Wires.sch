@@ -4,10 +4,10 @@ EELAYER 29 0
 EELAYER END
 $Descr User 11693 8548
 encoding utf-8
-Sheet 6 6
+Sheet 2 6
 Title "PyCubed Mainboard"
 Date ""
-Rev "v02"
+Rev "v03"
 Comp "Stanford University"
 Comment1 "rexlab.stanford.edu"
 Comment2 "Max Holliday"
@@ -944,7 +944,7 @@ Text Notes 2700 1900 0    85   ~ 0
 Power Relay A
 Text Notes 4500 800  0    85   ~ 0
 Burn Wire Control (Antenna Depolyment)
-Text Notes 4500 3300 0    85   ~ 0
+Text Notes 4400 3500 0    85   ~ 0
 Burn Wire Control (Sprite deployment)
 Text Notes 2800 4600 0    85   ~ 0
 Power Relay B
@@ -1166,4 +1166,6 @@ Wire Wire Line
 Connection ~ 5000 4650
 Wire Wire Line
 	5000 3800 5000 4650
+Text Notes 8600 7250 0    200  ~ 0
+Burn Wires
 $EndSCHEMATC

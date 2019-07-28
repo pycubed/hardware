@@ -4,10 +4,10 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 3 6
 Title "PyCubed Mainboard"
 Date ""
-Rev "v02"
+Rev "v03"
 Comp "Stanford University"
 Comment1 "rexlab.stanford.edu"
 Comment2 "Max Holliday"
@@ -35,11 +35,11 @@ Connection ~ 7800 2800
 Text GLabel 7800 2800 0    10   BiDi ~ 0
 GND
 Wire Wire Line
-	9200 4500 9200 4700
+	9250 5500 9250 5700
 Wire Wire Line
-	9000 4500 9200 4500
-Connection ~ 9200 4500
-Text GLabel 9200 4300 0    10   BiDi ~ 0
+	9050 5500 9250 5500
+Connection ~ 9250 5500
+Text GLabel 9250 5300 0    10   BiDi ~ 0
 GND
 Wire Wire Line
 	1050 2100 1500 2100
@@ -62,8 +62,8 @@ Wire Wire Line
 Text Label 9400 1700 0    50   ~ 0
 RF_IN
 Wire Wire Line
-	7700 4100 7600 4100
-Text Label 7600 4100 0    50   ~ 0
+	7750 5100 7650 5100
+Text Label 7650 5100 0    50   ~ 0
 RF_IN
 Wire Wire Line
 	7800 2700 7700 2700
@@ -151,27 +151,27 @@ $EndComp
 $Comp
 L mainboard:EP2W+ U?
 U 1 0 6D2AEAA6
-P 8400 4100
+P 8450 5100
 AR Path="/6D2AEAA6" Ref="U?"  Part="1" 
 AR Path="/5CEC6281/6D2AEAA6" Ref="U13"  Part="1" 
-F 0 "U13" H 8000 4500 50  0000 R TNB
-F 1 "EP2W+" H 8400 4100 50  0001 C CNN
-F 2 "kmb-test:QFN32-5X5MM" H 8400 4100 50  0001 C CNN
-F 3 "" H 8400 4100 50  0001 C CNN
-	1    8400 4100
+F 0 "U13" H 8050 5500 50  0000 R TNB
+F 1 "EP2W+" H 8450 5100 50  0001 C CNN
+F 2 "kmb-test:QFN32-5X5MM" H 8450 5100 50  0001 C CNN
+F 3 "" H 8450 5100 50  0001 C CNN
+	1    8450 5100
 	1    0    0    -1  
 $EndComp
 $Comp
 L mainboard:GND #GND?
 U 1 0 5123C17D
-P 9200 4800
+P 9250 5800
 AR Path="/5123C17D" Ref="#GND?"  Part="1" 
 AR Path="/5CEC6281/5123C17D" Ref="#GND044"  Part="1" 
-F 0 "#GND044" H 9200 4800 50  0001 C CNN
-F 1 "GND" H 9100 4700 59  0000 L BNN
-F 2 "" H 9200 4800 50  0001 C CNN
-F 3 "" H 9200 4800 50  0001 C CNN
-	1    9200 4800
+F 0 "#GND044" H 9250 5800 50  0001 C CNN
+F 1 "GND" H 9150 5700 59  0000 L BNN
+F 2 "" H 9250 5800 50  0001 C CNN
+F 3 "" H 9250 5800 50  0001 C CNN
+	1    9250 5800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -204,37 +204,37 @@ Text Notes 8200 1200 0    100  ~ 0
 GPS Module
 Text Notes 2350 5100 0    85   ~ 0
 HopeRF RFM98PW module at 3.3V
-Text Notes 7700 3300 0    100  ~ 0
-RF Splitter \n(2 Way, 0deg DC-Pass)
-Text Notes 2750 1050 0    150  ~ 0
-Sensor Modules
+Text Notes 7550 4300 0    100  ~ 0
+       RF Splitter \n(2 Way, 0deg DC-Pass)
+Text Notes 2400 1050 0    150  ~ 0
+Payload Modules
 $Comp
 L Connector:Conn_Coaxial J5
 U 1 1 5D3A148B
-P 9000 3700
-F 0 "J5" V 9237 3629 50  0000 C CNN
-F 1 "Conn_Coaxial" V 9146 3629 50  0000 C CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 9000 3700 50  0001 C CNN
-F 3 " ~" H 9000 3700 50  0001 C CNN
-	1    9000 3700
+P 9050 4700
+F 0 "J5" V 9287 4629 50  0000 C CNN
+F 1 "Conn_Coaxial" V 9196 4629 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 9050 4700 50  0001 C CNN
+F 3 " ~" H 9050 4700 50  0001 C CNN
+	1    9050 4700
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9200 3700 9200 4100
+	9250 4700 9250 5100
 $Comp
 L Connector:Conn_Coaxial J6
 U 1 1 5D3A5B0D
-P 9000 4100
-F 0 "J6" V 9237 4029 50  0000 C CNN
-F 1 "Conn_Coaxial" V 9146 4029 50  0000 C CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 9000 4100 50  0001 C CNN
-F 3 " ~" H 9000 4100 50  0001 C CNN
-	1    9000 4100
+P 9050 5100
+F 0 "J6" V 9287 5029 50  0000 C CNN
+F 1 "Conn_Coaxial" V 9196 5029 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 9050 5100 50  0001 C CNN
+F 3 " ~" H 9050 5100 50  0001 C CNN
+	1    9050 5100
 	0    -1   -1   0   
 $EndComp
-Connection ~ 9200 4100
+Connection ~ 9250 5100
 Wire Wire Line
-	9200 4100 9200 4500
+	9250 5100 9250 5500
 $Comp
 L Connector:Conn_Coaxial J7
 U 1 1 5D3A5EA0
@@ -733,7 +733,7 @@ SCK
 Wire Wire Line
 	2750 6500 2650 6500
 Text GLabel 2650 6500 0    50   BiDi ~ 0
-CS_RF
+RF_CS
 Wire Wire Line
 	3950 7000 4450 7000
 Connection ~ 4450 7000
@@ -831,4 +831,6 @@ F 3 "" H 3450 5850 50  0001 C CNN
 $EndComp
 Text GLabel 3450 5750 2    10   BiDi ~ 0
 GND
+Text Notes 7900 7000 0    200  ~ 0
+Radio, GPS, Payloads
 $EndSCHEMATC
