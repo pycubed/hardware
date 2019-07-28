@@ -9,6 +9,12 @@ PyCubed PC104 layout design files.
 - Zipped, ready-to-order, gerber files can be found in the root of each revision directory. 
 - NOTE: PyCubed layout has been ported from Eagle to KiCad to maintain the open-source nature of the project. Visit [http://www.kicad-pcb.org/](http://www.kicad-pcb.org/) for more details on this layout tool.
 
+## Adaptations❓
+Started with the PyCubed mainboard and adapted it to fit your specific needs? Submit a pull request to have your design added to the [adaptations](adaptations) directory!
+<br>
+<br>
+<br>
+<br>
 
 # Help Wanted ❗
 See the issues tab for a list of tasks in need of YOUR ☝ help!
