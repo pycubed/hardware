@@ -1,0 +1,834 @@
+EESchema Schematic File Version 4
+LIBS:mainboard-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title "PyCubed Mainboard"
+Date ""
+Rev "v02"
+Comp "Stanford University"
+Comment1 "rexlab.stanford.edu"
+Comment2 "Max Holliday"
+Comment3 "Zac Manchester"
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	9200 1600 9800 1600
+Wire Wire Line
+	9800 1600 9800 1800
+Wire Wire Line
+	9800 1800 9200 1800
+Connection ~ 9800 1800
+Text GLabel 9200 1600 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	7800 1600 7600 1600
+Wire Wire Line
+	7600 1600 7600 1800
+Text GLabel 7800 1600 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	7800 2800 7800 2900
+Connection ~ 7800 2800
+Text GLabel 7800 2800 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	9200 4500 9200 4700
+Wire Wire Line
+	9000 4500 9200 4500
+Connection ~ 9200 4500
+Text GLabel 9200 4300 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	1050 2100 1500 2100
+Text GLabel 1050 2100 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	2750 6300 2450 6300
+Text GLabel 2750 6300 0    10   BiDi ~ 0
+3.3V
+Wire Wire Line
+	7800 2500 7700 2500
+Text GLabel 7700 2500 0    50   BiDi ~ 0
+TX
+Wire Wire Line
+	7800 2400 7700 2400
+Text GLabel 7700 2400 0    50   BiDi ~ 0
+RX
+Wire Wire Line
+	9200 1700 9400 1700
+Text Label 9400 1700 0    50   ~ 0
+RF_IN
+Wire Wire Line
+	7700 4100 7600 4100
+Text Label 7600 4100 0    50   ~ 0
+RF_IN
+Wire Wire Line
+	7800 2700 7700 2700
+Wire Wire Line
+	7800 2700 7800 2600
+Text GLabel 7700 2700 0    50   BiDi ~ 0
+GPS_PWR_IN
+Connection ~ 7800 2700
+Wire Wire Line
+	10500 1850 10500 1750
+Text GLabel 10500 1750 2    50   BiDi ~ 0
+GPS_PWR_IN
+Wire Wire Line
+	1500 1700 1400 1700
+Text GLabel 1400 1700 0    50   BiDi ~ 0
+MOSI
+Wire Wire Line
+	1500 1900 1400 1900
+Text GLabel 1400 1900 0    50   BiDi ~ 0
+MISO
+Wire Wire Line
+	1500 1800 1400 1800
+Text GLabel 1400 1800 0    50   BiDi ~ 0
+SCK
+Wire Wire Line
+	1500 2000 1400 2000
+Text GLabel 1400 2000 0    50   BiDi ~ 0
+PA18
+Wire Wire Line
+	1500 1600 1400 1600
+Text GLabel 1400 1600 0    50   BiDi ~ 0
+PB17
+$Comp
+L mainboard:S1216V8 U?
+U 1 0 F6F52858
+P 8500 2200
+AR Path="/F6F52858" Ref="U?"  Part="1" 
+AR Path="/5CEC6281/F6F52858" Ref="U14"  Part="1" 
+F 0 "U14" H 8000 1400 59  0000 L BNN
+F 1 "S1216V8" H 8600 1400 59  0000 L BNN
+F 2 "kmb-test:S1216_24PIN_PACKAGE" H 8500 2200 50  0001 C CNN
+F 3 "" H 8500 2200 50  0001 C CNN
+	1    8500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:GND #GND?
+U 1 0 87F2849F
+P 7800 2900
+AR Path="/87F2849F" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/87F2849F" Ref="#GND043"  Part="1" 
+F 0 "#GND043" H 7800 2900 50  0001 C CNN
+F 1 "GND" H 7700 2800 59  0000 L BNN
+F 2 "" H 7800 2900 50  0001 C CNN
+F 3 "" H 7800 2900 50  0001 C CNN
+	1    7800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:GND #GND?
+U 1 0 7A046983
+P 7600 1900
+AR Path="/7A046983" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/7A046983" Ref="#GND042"  Part="1" 
+F 0 "#GND042" H 7600 1900 50  0001 C CNN
+F 1 "GND" H 7500 1800 59  0000 L BNN
+F 2 "" H 7600 1900 50  0001 C CNN
+F 3 "" H 7600 1900 50  0001 C CNN
+	1    7600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:GND #GND?
+U 1 0 A043859C
+P 9800 1900
+AR Path="/A043859C" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/A043859C" Ref="#GND047"  Part="1" 
+F 0 "#GND047" H 9800 1900 50  0001 C CNN
+F 1 "GND" H 9900 1900 59  0000 L BNN
+F 2 "" H 9800 1900 50  0001 C CNN
+F 3 "" H 9800 1900 50  0001 C CNN
+	1    9800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:EP2W+ U?
+U 1 0 6D2AEAA6
+P 8400 4100
+AR Path="/6D2AEAA6" Ref="U?"  Part="1" 
+AR Path="/5CEC6281/6D2AEAA6" Ref="U13"  Part="1" 
+F 0 "U13" H 8000 4500 50  0000 R TNB
+F 1 "EP2W+" H 8400 4100 50  0001 C CNN
+F 2 "kmb-test:QFN32-5X5MM" H 8400 4100 50  0001 C CNN
+F 3 "" H 8400 4100 50  0001 C CNN
+	1    8400 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:GND #GND?
+U 1 0 5123C17D
+P 9200 4800
+AR Path="/5123C17D" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/5123C17D" Ref="#GND044"  Part="1" 
+F 0 "#GND044" H 9200 4800 50  0001 C CNN
+F 1 "GND" H 9100 4700 59  0000 L BNN
+F 2 "" H 9200 4800 50  0001 C CNN
+F 3 "" H 9200 4800 50  0001 C CNN
+	1    9200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:3.3V #SUPPLY?
+U 1 0 86F85EE9
+P 2450 6300
+AR Path="/86F85EE9" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5CEC6281/86F85EE9" Ref="#SUPPLY09"  Part="1" 
+F 0 "#SUPPLY09" H 2450 6300 50  0001 C CNN
+F 1 "3.3V" H 2410 6440 59  0000 L BNN
+F 2 "" H 2450 6300 50  0001 C CNN
+F 3 "" H 2450 6300 50  0001 C CNN
+	1    2450 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:GND #GND?
+U 1 0 740EDAAB
+P 1050 2200
+AR Path="/740EDAAB" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/740EDAAB" Ref="#GND033"  Part="1" 
+F 0 "#GND033" H 1050 2200 50  0001 C CNN
+F 1 "GND" H 950 2100 59  0000 L BNN
+F 2 "" H 1050 2200 50  0001 C CNN
+F 3 "" H 1050 2200 50  0001 C CNN
+	1    1050 2200
+	1    0    0    -1  
+$EndComp
+Text Notes 8200 1200 0    100  ~ 0
+GPS Module
+Text Notes 2350 5100 0    85   ~ 0
+HopeRF RFM98PW module at 3.3V
+Text Notes 7700 3300 0    100  ~ 0
+RF Splitter \n(2 Way, 0deg DC-Pass)
+Text Notes 2750 1050 0    150  ~ 0
+Sensor Modules
+$Comp
+L Connector:Conn_Coaxial J5
+U 1 1 5D3A148B
+P 9000 3700
+F 0 "J5" V 9237 3629 50  0000 C CNN
+F 1 "Conn_Coaxial" V 9146 3629 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 9000 3700 50  0001 C CNN
+F 3 " ~" H 9000 3700 50  0001 C CNN
+	1    9000 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 3700 9200 4100
+$Comp
+L Connector:Conn_Coaxial J6
+U 1 1 5D3A5B0D
+P 9000 4100
+F 0 "J6" V 9237 4029 50  0000 C CNN
+F 1 "Conn_Coaxial" V 9146 4029 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 9000 4100 50  0001 C CNN
+F 3 " ~" H 9000 4100 50  0001 C CNN
+	1    9000 4100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9200 4100
+Wire Wire Line
+	9200 4100 9200 4500
+$Comp
+L Connector:Conn_Coaxial J7
+U 1 1 5D3A5EA0
+P 4250 6100
+F 0 "J7" V 4487 6029 50  0000 C CNN
+F 1 "Conn_Coaxial" V 4396 6029 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 4250 6100 50  0001 C CNN
+F 3 " ~" H 4250 6100 50  0001 C CNN
+	1    4250 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L symbols:XTB-40 U10
+U 1 1 5D320CBA
+P 2100 1750
+F 0 "U10" H 2075 2415 50  0000 C CNN
+F 1 "XTB-40" H 2075 2324 50  0000 C CNN
+F 2 "custom-footprints:XTB28_MEZ" H 2100 1750 50  0001 C CNN
+F 3 "" H 2100 1750 50  0001 C CNN
+	1    2100 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1400 1500 1400
+Text GLabel 1050 1400 0    10   BiDi ~ 0
+GND
+$Comp
+L mainboard:GND #GND?
+U 1 0 5D337CD1
+P 1050 1500
+AR Path="/5D337CD1" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/5D337CD1" Ref="#GND032"  Part="1" 
+F 0 "#GND032" H 1050 1500 50  0001 C CNN
+F 1 "GND" H 950 1400 59  0000 L BNN
+F 2 "" H 1050 1500 50  0001 C CNN
+F 3 "" H 1050 1500 50  0001 C CNN
+	1    1050 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2200 2650 2200
+Text GLabel 3100 2200 2    10   BiDi ~ 0
+GND
+$Comp
+L mainboard:GND #GND?
+U 1 0 5D34ABEC
+P 3100 2300
+AR Path="/5D34ABEC" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/5D34ABEC" Ref="#GND035"  Part="1" 
+F 0 "#GND035" H 3100 2300 50  0001 C CNN
+F 1 "GND" H 3000 2200 59  0000 L BNN
+F 2 "" H 3100 2300 50  0001 C CNN
+F 3 "" H 3100 2300 50  0001 C CNN
+	1    3100 2300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2150 4050 2150
+Text GLabel 3600 2150 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	4050 1750 3950 1750
+Text GLabel 3950 1750 0    50   BiDi ~ 0
+MOSI
+Wire Wire Line
+	4050 1950 3950 1950
+Text GLabel 3950 1950 0    50   BiDi ~ 0
+MISO
+Wire Wire Line
+	4050 1850 3950 1850
+Text GLabel 3950 1850 0    50   BiDi ~ 0
+SCK
+Wire Wire Line
+	4050 2050 3950 2050
+Text GLabel 3950 2050 0    50   BiDi ~ 0
+PA19
+Wire Wire Line
+	4050 1650 3950 1650
+Text GLabel 3950 1650 0    50   BiDi ~ 0
+PB16
+$Comp
+L mainboard:GND #GND?
+U 1 0 5D35FFD7
+P 3600 2250
+AR Path="/5D35FFD7" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/5D35FFD7" Ref="#GND039"  Part="1" 
+F 0 "#GND039" H 3600 2250 50  0001 C CNN
+F 1 "GND" H 3500 2150 59  0000 L BNN
+F 2 "" H 3600 2250 50  0001 C CNN
+F 3 "" H 3600 2250 50  0001 C CNN
+	1    3600 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:XTB-40 U12
+U 1 1 5D35FFDD
+P 4650 1800
+F 0 "U12" H 4625 2465 50  0000 C CNN
+F 1 "XTB-40" H 4625 2374 50  0000 C CNN
+F 2 "custom-footprints:XTB28_MEZ" H 4650 1800 50  0001 C CNN
+F 3 "" H 4650 1800 50  0001 C CNN
+	1    4650 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1450 4050 1450
+Text GLabel 3600 1450 0    10   BiDi ~ 0
+GND
+$Comp
+L mainboard:GND #GND?
+U 1 0 5D35FFEB
+P 3600 1550
+AR Path="/5D35FFEB" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/5D35FFEB" Ref="#GND038"  Part="1" 
+F 0 "#GND038" H 3600 1550 50  0001 C CNN
+F 1 "GND" H 3500 1450 59  0000 L BNN
+F 2 "" H 3600 1550 50  0001 C CNN
+F 3 "" H 3600 1550 50  0001 C CNN
+	1    3600 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2250 5200 2250
+Text GLabel 5650 2250 2    10   BiDi ~ 0
+GND
+$Comp
+L mainboard:GND #GND?
+U 1 0 5D35FFF3
+P 5650 2350
+AR Path="/5D35FFF3" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/5D35FFF3" Ref="#GND041"  Part="1" 
+F 0 "#GND041" H 5650 2350 50  0001 C CNN
+F 1 "GND" H 5550 2250 59  0000 L BNN
+F 2 "" H 5650 2350 50  0001 C CNN
+F 3 "" H 5650 2350 50  0001 C CNN
+	1    5650 2350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 3900 1500 3900
+Text GLabel 1050 3900 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	1500 3500 1400 3500
+Text GLabel 1400 3500 0    50   BiDi ~ 0
+MOSI
+Wire Wire Line
+	1500 3700 1400 3700
+Text GLabel 1400 3700 0    50   BiDi ~ 0
+MISO
+Wire Wire Line
+	1500 3600 1400 3600
+Text GLabel 1400 3600 0    50   BiDi ~ 0
+SCK
+Wire Wire Line
+	1500 3800 1400 3800
+Text GLabel 1400 3800 0    50   BiDi ~ 0
+PA20
+Wire Wire Line
+	1500 3400 1400 3400
+Text GLabel 1400 3400 0    50   BiDi ~ 0
+PB23
+$Comp
+L mainboard:GND #GND?
+U 1 0 5D36A7B4
+P 1050 4000
+AR Path="/5D36A7B4" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/5D36A7B4" Ref="#GND031"  Part="1" 
+F 0 "#GND031" H 1050 4000 50  0001 C CNN
+F 1 "GND" H 950 3900 59  0000 L BNN
+F 2 "" H 1050 4000 50  0001 C CNN
+F 3 "" H 1050 4000 50  0001 C CNN
+	1    1050 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:XTB-40 U9
+U 1 1 5D36A7BA
+P 2100 3550
+F 0 "U9" H 2075 4215 50  0000 C CNN
+F 1 "XTB-40" H 2075 4124 50  0000 C CNN
+F 2 "custom-footprints:XTB28_MEZ" H 2100 3550 50  0001 C CNN
+F 3 "" H 2100 3550 50  0001 C CNN
+	1    2100 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 3200 1500 3200
+Text GLabel 1050 3200 0    10   BiDi ~ 0
+GND
+$Comp
+L mainboard:GND #GND?
+U 1 0 5D36A7C8
+P 1050 3300
+AR Path="/5D36A7C8" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/5D36A7C8" Ref="#GND030"  Part="1" 
+F 0 "#GND030" H 1050 3300 50  0001 C CNN
+F 1 "GND" H 950 3200 59  0000 L BNN
+F 2 "" H 1050 3300 50  0001 C CNN
+F 3 "" H 1050 3300 50  0001 C CNN
+	1    1050 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4000 2650 4000
+Text GLabel 3100 4000 2    10   BiDi ~ 0
+GND
+$Comp
+L mainboard:GND #GND?
+U 1 0 5D36A7D0
+P 3100 4100
+AR Path="/5D36A7D0" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/5D36A7D0" Ref="#GND034"  Part="1" 
+F 0 "#GND034" H 3100 4100 50  0001 C CNN
+F 1 "GND" H 3000 4000 59  0000 L BNN
+F 2 "" H 3100 4100 50  0001 C CNN
+F 3 "" H 3100 4100 50  0001 C CNN
+	1    3100 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3950 4050 3950
+Text GLabel 3600 3950 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	4050 3550 3950 3550
+Text GLabel 3950 3550 0    50   BiDi ~ 0
+MOSI
+Wire Wire Line
+	4050 3750 3950 3750
+Text GLabel 3950 3750 0    50   BiDi ~ 0
+MISO
+Wire Wire Line
+	4050 3650 3950 3650
+Text GLabel 3950 3650 0    50   BiDi ~ 0
+SCK
+Wire Wire Line
+	4050 3850 3950 3850
+Text GLabel 3950 3850 0    50   BiDi ~ 0
+PA22
+Wire Wire Line
+	4050 3450 3950 3450
+Text GLabel 3950 3450 0    50   BiDi ~ 0
+PB22
+$Comp
+L mainboard:GND #GND?
+U 1 0 5D36A7E8
+P 3600 4050
+AR Path="/5D36A7E8" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/5D36A7E8" Ref="#GND037"  Part="1" 
+F 0 "#GND037" H 3600 4050 50  0001 C CNN
+F 1 "GND" H 3500 3950 59  0000 L BNN
+F 2 "" H 3600 4050 50  0001 C CNN
+F 3 "" H 3600 4050 50  0001 C CNN
+	1    3600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:XTB-40 U11
+U 1 1 5D36A7EE
+P 4650 3600
+F 0 "U11" H 4625 4265 50  0000 C CNN
+F 1 "XTB-40" H 4625 4174 50  0000 C CNN
+F 2 "custom-footprints:XTB28_MEZ" H 4650 3600 50  0001 C CNN
+F 3 "" H 4650 3600 50  0001 C CNN
+	1    4650 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3250 4050 3250
+Text GLabel 3600 3250 0    10   BiDi ~ 0
+GND
+$Comp
+L mainboard:GND #GND?
+U 1 0 5D36A7FC
+P 3600 3350
+AR Path="/5D36A7FC" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/5D36A7FC" Ref="#GND036"  Part="1" 
+F 0 "#GND036" H 3600 3350 50  0001 C CNN
+F 1 "GND" H 3500 3250 59  0000 L BNN
+F 2 "" H 3600 3350 50  0001 C CNN
+F 3 "" H 3600 3350 50  0001 C CNN
+	1    3600 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4050 5200 4050
+Text GLabel 5650 4050 2    10   BiDi ~ 0
+GND
+$Comp
+L mainboard:GND #GND?
+U 1 0 5D36A804
+P 5650 4150
+AR Path="/5D36A804" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/5D36A804" Ref="#GND040"  Part="1" 
+F 0 "#GND040" H 5650 4150 50  0001 C CNN
+F 1 "GND" H 5550 4050 59  0000 L BNN
+F 2 "" H 5650 4150 50  0001 C CNN
+F 3 "" H 5650 4150 50  0001 C CNN
+	1    5650 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mainboard:3.3V #SUPPLY?
+U 1 0 5D357585
+P 5200 2150
+AR Path="/5D357585" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5CEC6281/5D357585" Ref="#SUPPLY0103"  Part="1" 
+F 0 "#SUPPLY0103" H 5200 2150 50  0001 C CNN
+F 1 "3.3V" V 5250 2300 59  0000 L BNN
+F 2 "" H 5200 2150 50  0001 C CNN
+F 3 "" H 5200 2150 50  0001 C CNN
+	1    5200 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L mainboard:3.3V #SUPPLY?
+U 1 0 5D357D9A
+P 2650 2100
+AR Path="/5D357D9A" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5CEC6281/5D357D9A" Ref="#SUPPLY0104"  Part="1" 
+F 0 "#SUPPLY0104" H 2650 2100 50  0001 C CNN
+F 1 "3.3V" V 2700 2250 59  0000 L BNN
+F 2 "" H 2650 2100 50  0001 C CNN
+F 3 "" H 2650 2100 50  0001 C CNN
+	1    2650 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L mainboard:3.3V #SUPPLY?
+U 1 0 5D3583F9
+P 1500 2200
+AR Path="/5D3583F9" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5CEC6281/5D3583F9" Ref="#SUPPLY0105"  Part="1" 
+F 0 "#SUPPLY0105" H 1500 2200 50  0001 C CNN
+F 1 "3.3V" V 1550 2350 59  0000 L BNN
+F 2 "" H 1500 2200 50  0001 C CNN
+F 3 "" H 1500 2200 50  0001 C CNN
+	1    1500 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard:3.3V #SUPPLY?
+U 1 0 5D358948
+P 4050 2250
+AR Path="/5D358948" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5CEC6281/5D358948" Ref="#SUPPLY0106"  Part="1" 
+F 0 "#SUPPLY0106" H 4050 2250 50  0001 C CNN
+F 1 "3.3V" V 4100 2400 59  0000 L BNN
+F 2 "" H 4050 2250 50  0001 C CNN
+F 3 "" H 4050 2250 50  0001 C CNN
+	1    4050 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard:3.3V #SUPPLY?
+U 1 0 5D358E15
+P 1500 4000
+AR Path="/5D358E15" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5CEC6281/5D358E15" Ref="#SUPPLY0107"  Part="1" 
+F 0 "#SUPPLY0107" H 1500 4000 50  0001 C CNN
+F 1 "3.3V" V 1550 4150 59  0000 L BNN
+F 2 "" H 1500 4000 50  0001 C CNN
+F 3 "" H 1500 4000 50  0001 C CNN
+	1    1500 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard:3.3V #SUPPLY?
+U 1 0 5D3598BC
+P 4050 4050
+AR Path="/5D3598BC" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5CEC6281/5D3598BC" Ref="#SUPPLY0108"  Part="1" 
+F 0 "#SUPPLY0108" H 4050 4050 50  0001 C CNN
+F 1 "3.3V" V 4100 4200 59  0000 L BNN
+F 2 "" H 4050 4050 50  0001 C CNN
+F 3 "" H 4050 4050 50  0001 C CNN
+	1    4050 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard:3.3V #SUPPLY?
+U 1 0 5D359FAA
+P 2650 3900
+AR Path="/5D359FAA" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5CEC6281/5D359FAA" Ref="#SUPPLY0109"  Part="1" 
+F 0 "#SUPPLY0109" H 2650 3900 50  0001 C CNN
+F 1 "3.3V" V 2700 4050 59  0000 L BNN
+F 2 "" H 2650 3900 50  0001 C CNN
+F 3 "" H 2650 3900 50  0001 C CNN
+	1    2650 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L mainboard:3.3V #SUPPLY?
+U 1 0 5D35A6D2
+P 5200 3950
+AR Path="/5D35A6D2" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5CEC6281/5D35A6D2" Ref="#SUPPLY0110"  Part="1" 
+F 0 "#SUPPLY0110" H 5200 3950 50  0001 C CNN
+F 1 "3.3V" V 5250 4100 59  0000 L BNN
+F 2 "" H 5200 3950 50  0001 C CNN
+F 3 "" H 5200 3950 50  0001 C CNN
+	1    5200 3950
+	0    1    1    0   
+$EndComp
+Text GLabel 4100 6400 2    50   BiDi ~ 0
+RF_IO2
+Wire Wire Line
+	4100 6400 3950 6400
+$Comp
+L mainboard:10KOHM-1_10W-1%(0603)0603 R?
+U 1 0 5D38F427
+P 10000 2250
+AR Path="/5D38F427" Ref="R?"  Part="1" 
+AR Path="/5CEC6281/5D38F427" Ref="R47"  Part="1" 
+F 0 "R47" H 9950 2350 59  0000 L BNN
+F 1 "0" H 10000 2100 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10000 2250 50  0001 C CNN
+F 3 "" H 10000 2250 50  0001 C CNN
+	1    10000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:10KOHM-1_10W-1%(0603)0603 R?
+U 1 0 5D38EE2E
+P 9600 2250
+AR Path="/5D38EE2E" Ref="R?"  Part="1" 
+AR Path="/5CEC6281/5D38EE2E" Ref="R46"  Part="1" 
+F 0 "R46" H 9500 2350 59  0000 L BNN
+F 1 "0" H 9600 2300 59  0001 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9600 2250 50  0001 C CNN
+F 3 "" H 9600 2250 50  0001 C CNN
+F 4 "DNI" H 9600 2250 50  0001 C CNN "DNI"
+	1    9600 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:GND #GND?
+U 1 0 6BBB6AA2
+P 9400 2350
+AR Path="/6BBB6AA2" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/6BBB6AA2" Ref="#GND045"  Part="1" 
+F 0 "#GND045" H 9400 2350 50  0001 C CNN
+F 1 "GND" H 9300 2250 59  0000 L BNN
+F 2 "" H 9400 2350 50  0001 C CNN
+F 3 "" H 9400 2350 50  0001 C CNN
+	1    9400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:10KOHM-1_10W-1%(0603)0603 R?
+U 1 0 38A56A55
+P 10500 2050
+AR Path="/38A56A55" Ref="R?"  Part="1" 
+AR Path="/5CEC6281/38A56A55" Ref="R24"  Part="1" 
+F 0 "R24" H 10350 2109 59  0000 L BNN
+F 1 "10K" H 10350 1920 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10500 2050 50  0001 C CNN
+F 3 "" H 10500 2050 50  0001 C CNN
+	1    10500 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10500 2250 10200 2250
+Wire Wire Line
+	9800 2000 9800 2250
+Wire Wire Line
+	9200 2000 9800 2000
+Connection ~ 9800 2250
+Text Notes 9550 2400 0    50   ~ 0
+DNI
+$Comp
+L symbols:RFM98PW U23
+U 1 1 5D44FE4A
+P 3250 6600
+F 0 "U23" H 3350 6020 59  0000 C CNN
+F 1 "RFM98PW" H 3350 6150 50  0001 C CNN
+F 2 "custom-footprints:RFM98PW" H 3350 6050 50  0001 C CNN
+F 3 "" H 3250 6600 50  0001 C CNN
+	1    3250 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 6700 2650 6700
+Text GLabel 2650 6700 0    50   BiDi ~ 0
+MOSI
+Wire Wire Line
+	2750 6800 2650 6800
+Text GLabel 2650 6800 0    50   BiDi ~ 0
+MISO
+Wire Wire Line
+	2750 6600 2650 6600
+Text GLabel 2650 6600 0    50   BiDi ~ 0
+SCK
+Wire Wire Line
+	2750 6500 2650 6500
+Text GLabel 2650 6500 0    50   BiDi ~ 0
+CS_RF
+Wire Wire Line
+	3950 7000 4450 7000
+Connection ~ 4450 7000
+Text GLabel 4450 6300 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	3950 6300 4250 6300
+$Comp
+L mainboard:GND #GND?
+U 1 0 5D460268
+P 4450 7100
+AR Path="/5D460268" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/5D460268" Ref="#GND0103"  Part="1" 
+F 0 "#GND0103" H 4450 7100 50  0001 C CNN
+F 1 "GND" H 4350 7000 59  0000 L BNN
+F 2 "" H 4450 7100 50  0001 C CNN
+F 3 "" H 4450 7100 50  0001 C CNN
+	1    4450 7100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6100 4450 7000
+$Comp
+L mainboard:10KOHM-1_10W-1%(0603)0603 R?
+U 1 0 5D471869
+P 3150 5750
+AR Path="/5D471869" Ref="R?"  Part="1" 
+AR Path="/5CEC6281/5D471869" Ref="R48"  Part="1" 
+F 0 "R48" H 3100 5850 59  0000 L BNN
+F 1 "0" H 3150 5600 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3150 5750 50  0001 C CNN
+F 3 "" H 3150 5750 50  0001 C CNN
+	1    3150 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:3.3V #SUPPLY?
+U 1 0 5D473DD1
+P 2950 5500
+AR Path="/5D473DD1" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5CEC6281/5D473DD1" Ref="#SUPPLY0112"  Part="1" 
+F 0 "#SUPPLY0112" H 2950 5500 50  0001 C CNN
+F 1 "3.3V" H 2850 5650 59  0000 L BNN
+F 2 "" H 2950 5500 50  0001 C CNN
+F 3 "" H 2950 5500 50  0001 C CNN
+	1    2950 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 5500 2950 5750
+Wire Wire Line
+	3350 5750 3350 6000
+Text Notes 3200 5450 0    85   ~ 0
+Radio\nVCC
+Connection ~ 3350 5750
+Text GLabel 2650 6900 0    50   BiDi ~ 0
+RF_IO0
+Wire Wire Line
+	2650 6900 2750 6900
+Text GLabel 2650 7000 0    50   BiDi ~ 0
+RF_IO1
+Wire Wire Line
+	2650 7000 2750 7000
+Wire Wire Line
+	2750 6400 2650 6400
+Text GLabel 2650 6400 0    50   BiDi ~ 0
+RF_RST
+Text GLabel 4100 6700 2    50   BiDi ~ 0
+RF_IO5
+Wire Wire Line
+	4100 6700 3950 6700
+$Comp
+L Connector_Generic:Conn_01x02 J11
+U 1 1 5D498810
+P 3350 5550
+F 0 "J11" V 3314 5362 50  0000 R CNN
+F 1 "Conn_01x02" V 3223 5362 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3350 5550 50  0001 C CNN
+F 3 "~" H 3350 5550 50  0001 C CNN
+	1    3350 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard:GND #GND?
+U 1 0 5D4995C5
+P 3450 5850
+AR Path="/5D4995C5" Ref="#GND?"  Part="1" 
+AR Path="/5CEC6281/5D4995C5" Ref="#GND0104"  Part="1" 
+F 0 "#GND0104" H 3450 5850 50  0001 C CNN
+F 1 "GND" H 3350 5750 59  0000 L BNN
+F 2 "" H 3450 5850 50  0001 C CNN
+F 3 "" H 3450 5850 50  0001 C CNN
+	1    3450 5850
+	-1   0    0    -1  
+$EndComp
+Text GLabel 3450 5750 2    10   BiDi ~ 0
+GND
+$EndSCHEMATC
