@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:mainboard-cache
 EELAYER 29 0
 EELAYER END
 $Descr User 11693 8548

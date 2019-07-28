@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:mainboard-cache
 EELAYER 29 0
 EELAYER END
 $Descr User 12117 8851
@@ -498,29 +497,29 @@ Wire Wire Line
 $Comp
 L mainboard:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue C?
 U 1 0 5CF0D2B6
-P 2700 3950
+P 2100 3950
 AR Path="/5BCFDB7D/5CF0D2B6" Ref="C?"  Part="1" 
 AR Path="/5CF0D2B6" Ref="C?"  Part="1" 
 AR Path="/5CEC5A72/5CF0D2B6" Ref="C1"  Part="1" 
-F 0 "C1" V 2610 3999 50  0000 C CNN
-F 1 "22pF" V 2550 4000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2700 3950 50  0001 C CNN
-F 3 "" H 2700 3950 50  0001 C CNN
-	1    2700 3950
+F 0 "C1" V 2010 3999 50  0000 C CNN
+F 1 "22pF" V 1950 4000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2100 3950 50  0001 C CNN
+F 3 "" H 2100 3950 50  0001 C CNN
+	1    2100 3950
 	0    1    -1   0   
 $EndComp
 $Comp
 L mainboard:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue C?
 U 1 0 5CF0D2BC
-P 2700 4250
+P 2100 4250
 AR Path="/5BCFDB7D/5CF0D2BC" Ref="C?"  Part="1" 
 AR Path="/5CF0D2BC" Ref="C?"  Part="1" 
 AR Path="/5CEC5A72/5CF0D2BC" Ref="C2"  Part="1" 
-F 0 "C2" V 2610 4299 50  0000 C CNN
-F 1 "22pF" V 2550 4300 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2700 4250 50  0001 C CNN
-F 3 "" H 2700 4250 50  0001 C CNN
-	1    2700 4250
+F 0 "C2" V 2010 4299 50  0000 C CNN
+F 1 "22pF" V 1950 4300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2100 4250 50  0001 C CNN
+F 3 "" H 2100 4250 50  0001 C CNN
+	1    2100 4250
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
@@ -528,7 +527,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 4050 4700 4050
 Wire Wire Line
-	2600 3950 2600 4250
+	2000 3950 2000 4250
 Wire Wire Line
 	4700 3600 4050 3600
 Wire Wire Line
@@ -636,9 +635,9 @@ Text Label 4500 3150 0    39   ~ 0
 SWCLK
 Text Label 4500 3250 0    39   ~ 0
 SWDIO
-Connection ~ 2600 4250
+Connection ~ 2000 4250
 Wire Wire Line
-	2600 4250 2600 5100
+	2000 4250 2000 5100
 Wire Wire Line
 	4450 6050 4700 6050
 $Comp
@@ -768,14 +767,14 @@ $EndComp
 $Comp
 L mainboard:GND #GND?
 U 1 0 5CFD52FB
-P 2600 5200
+P 2000 5200
 AR Path="/5CFD52FB" Ref="#GND?"  Part="1" 
 AR Path="/5CEC5A72/5CFD52FB" Ref="#GND03"  Part="1" 
-F 0 "#GND03" H 2600 5200 50  0001 C CNN
-F 1 "GND" H 2500 5100 59  0000 L BNN
-F 2 "" H 2600 5200 50  0001 C CNN
-F 3 "" H 2600 5200 50  0001 C CNN
-	1    2600 5200
+F 0 "#GND03" H 2000 5200 50  0001 C CNN
+F 1 "GND" H 1900 5100 59  0000 L BNN
+F 2 "" H 2000 5200 50  0001 C CNN
+F 3 "" H 2000 5200 50  0001 C CNN
+	1    2000 5200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -863,24 +862,24 @@ Connection ~ 4400 3150
 $Comp
 L Device:Crystal Y1
 U 1 1 5D3985E2
-P 3000 4100
-F 0 "Y1" V 2954 4231 50  0000 L CNN
-F 1 "32.768kHz" V 3045 4231 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 3000 4100 50  0001 C CNN
-F 3 "~" H 3000 4100 50  0001 C CNN
-	1    3000 4100
+P 2400 4100
+F 0 "Y1" V 2354 4231 50  0000 L CNN
+F 1 "32.768kHz" V 2445 4231 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 2400 4100 50  0001 C CNN
+F 3 "~" H 2400 4100 50  0001 C CNN
+	1    2400 4100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2900 3950 3000 3950
+	2300 3950 2400 3950
 Wire Wire Line
-	2900 4250 3000 4250
-Connection ~ 3000 3950
+	2300 4250 2400 4250
+Connection ~ 2400 3950
 Wire Wire Line
-	3000 3950 4700 3950
-Connection ~ 3000 4250
+	2400 3950 4700 3950
+Connection ~ 2400 4250
 Wire Wire Line
-	3000 4250 3550 4250
+	2400 4250 3550 4250
 $Comp
 L mainboard:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue C?
 U 1 0 5D39F8DC
@@ -976,57 +975,57 @@ Wire Wire Line
 	3900 4550 4700 4550
 Wire Wire Line
 	3900 4800 3900 4550
-Connection ~ 2600 5100
+Connection ~ 2000 5100
 Wire Wire Line
-	3150 4500 3250 4500
-Text GLabel 3150 4500 0    59   Input ~ 0
+	2550 4500 2650 4500
+Text GLabel 2550 4500 0    59   Input ~ 0
 VBATT
-Connection ~ 3250 5100
+Connection ~ 2650 5100
 Wire Wire Line
-	3450 5100 3250 5100
+	2850 5100 2650 5100
 Wire Wire Line
-	3450 4800 3900 4800
-Connection ~ 3450 4800
+	2850 4800 3900 4800
+Connection ~ 2850 4800
 $Comp
 L mainboard:0.1UF-25V(+80_-20%)(0603) C?
 U 1 0 5D2972EA
-P 3450 5000
+P 2850 5000
 AR Path="/5D2972EA" Ref="C?"  Part="1" 
 AR Path="/5CEC5A72/5D2972EA" Ref="C3"  Part="1" 
-F 0 "C3" H 3300 5150 59  0000 R TNN
-F 1 "0.1uF" H 3300 5050 59  0000 R TNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3450 5000 50  0001 C CNN
-F 3 "" H 3450 5000 50  0001 C CNN
-	1    3450 5000
+F 0 "C3" H 2700 5150 59  0000 R TNN
+F 1 "0.1uF" H 2700 5050 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2850 5000 50  0001 C CNN
+F 3 "" H 2850 5000 50  0001 C CNN
+	1    2850 5000
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 4800 3450 4800
+	2650 4800 2850 4800
 Wire Wire Line
-	3250 5100 2600 5100
+	2650 5100 2000 5100
 Text Label 3550 4800 0    40   ~ 0
 BATTERY
-Connection ~ 3250 4800
+Connection ~ 2650 4800
 $Comp
 L Device:R_US R2
 U 1 1 5CF0D335
-P 3250 4950
-F 0 "R2" H 3400 4900 50  0000 C CNN
-F 1 "110K" H 3400 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3290 4940 50  0001 C CNN
-F 3 "~" H 3250 4950 50  0001 C CNN
-	1    3250 4950
+P 2650 4950
+F 0 "R2" H 2800 4900 50  0000 C CNN
+F 1 "110K" H 2800 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2690 4940 50  0001 C CNN
+F 3 "~" H 2650 4950 50  0001 C CNN
+	1    2650 4950
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_US R1
 U 1 1 5CF0D321
-P 3250 4650
-F 0 "R1" H 3100 4700 50  0000 C CNN
-F 1 "316K" H 3100 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3290 4640 50  0001 C CNN
-F 3 "~" H 3250 4650 50  0001 C CNN
-	1    3250 4650
+P 2650 4650
+F 0 "R1" H 2500 4700 50  0000 C CNN
+F 1 "316K" H 2500 4600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2690 4640 50  0001 C CNN
+F 3 "~" H 2650 4650 50  0001 C CNN
+	1    2650 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1323,56 +1322,56 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x05 J9
 U 1 1 5D408200
-P 10300 2550
-F 0 "J9" H 10300 2850 50  0000 C CNN
-F 1 "Conn_01x05" V 10218 2876 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 10300 2550 50  0001 C CNN
-F 3 "~" H 10300 2550 50  0001 C CNN
-	1    10300 2550
+P 9350 2450
+F 0 "J9" H 9350 2750 50  0000 C CNN
+F 1 "Conn_01x05" V 9268 2776 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 9350 2450 50  0001 C CNN
+F 3 "~" H 9350 2450 50  0001 C CNN
+	1    9350 2450
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10500 2350 10600 2350
-Text GLabel 10600 2350 2    50   BiDi ~ 0
+	9550 2250 9650 2250
+Text GLabel 9650 2250 2    50   BiDi ~ 0
 PB17
 Wire Wire Line
-	10500 2450 10600 2450
-Text GLabel 10600 2450 2    50   BiDi ~ 0
+	9550 2350 9650 2350
+Text GLabel 9650 2350 2    50   BiDi ~ 0
 PB16
 Wire Wire Line
-	10500 2650 10600 2650
+	9550 2550 9650 2550
 Wire Wire Line
-	10500 2750 10600 2750
-Text GLabel 10600 2750 2    50   BiDi ~ 0
+	9550 2650 9650 2650
+Text GLabel 9650 2650 2    50   BiDi ~ 0
 PA16
 Wire Wire Line
-	10500 2550 10600 2550
+	9550 2450 9650 2450
 $Comp
 L Connector_Generic:Conn_01x03 J10
 U 1 1 5D538CE6
-P 10300 3200
-F 0 "J10" H 10300 3400 50  0000 C CNN
-F 1 "Conn_01x03" H 10218 3426 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10300 3200 50  0001 C CNN
-F 3 "~" H 10300 3200 50  0001 C CNN
-	1    10300 3200
+P 9350 3100
+F 0 "J10" H 9350 3300 50  0000 C CNN
+F 1 "Conn_01x03" H 9268 3326 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9350 3100 50  0001 C CNN
+F 3 "~" H 9350 3100 50  0001 C CNN
+	1    9350 3100
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10500 3100 10600 3100
-Text GLabel 10600 3100 2    50   BiDi ~ 0
+	9550 3000 9650 3000
+Text GLabel 9650 3000 2    50   BiDi ~ 0
 DAC0
 Wire Wire Line
-	10500 3300 10600 3300
-Text GLabel 10600 3300 2    50   BiDi ~ 0
+	9550 3200 9650 3200
+Text GLabel 9650 3200 2    50   BiDi ~ 0
 PB14
 Wire Wire Line
-	10500 3200 10600 3200
-Text GLabel 10600 3200 2    50   BiDi ~ 0
+	9550 3100 9650 3100
+Text GLabel 9650 3100 2    50   BiDi ~ 0
 PB15
-Text GLabel 10600 2650 2    50   BiDi ~ 0
+Text GLabel 9650 2550 2    50   BiDi ~ 0
 PA18
-Text GLabel 10600 2550 2    50   BiDi ~ 0
+Text GLabel 9650 2450 2    50   BiDi ~ 0
 PA19
 Text Notes 11150 4300 2    85   ~ 0
 Mounting Holes
