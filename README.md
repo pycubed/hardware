@@ -1,5 +1,9 @@
 # Hardware ⚙
-PyCubed PC104 layout design files. 
+PyCubed PC104 layout design files.
+
+<p align="middle">
+  <img width="300" src="https://github.com/pycubed/documentation/blob/master/images/KickSat2_mainboard.png">
+</p>
 
 ## Details:
 - 4-layer PCB, minimum trace/spacing > 8 mils.
