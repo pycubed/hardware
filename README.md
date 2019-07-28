@@ -1,5 +1,5 @@
 # Hardware ⚙
-PyCubed PC104 layout design files.
+PyCubed PCB layout files
 
 <p align="middle">
   <img width="300" src="https://github.com/pycubed/documentation/blob/master/images/KickSat2_mainboard.png">
