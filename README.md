@@ -2,7 +2,7 @@
 PyCubed PCB layout files
 
 <p align="middle">
-  <img width="300" src="https://github.com/pycubed/documentation/blob/master/images/PyCubed_mainboard-v02.png">
+  <img width="500" src="https://github.com/pycubed/documentation/blob/master/images/PyCubed_mainboard-v02.png">
 </p>
 
 ## Details:
