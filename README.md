@@ -1,5 +1,6 @@
 # Hardware ⚙
-PyCubed PCB layout files
+
+## [⭐ See the PyCubed Quick Start page for tutorials, design resources, and more!](https://www.notion.so/maholli/PyCubed-4cbfac7e9b684852a2ab2193bd485c4d)
 
 <p align="middle">
   <img width="500" src="https://github.com/pycubed/documentation/blob/master/images/PyCubed_mainboard-v02.png">
