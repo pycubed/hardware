@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:mainboard-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr User 12117 8851
 encoding utf-8
@@ -56,9 +56,6 @@ Wire Wire Line
 	5000 1700 5600 1700
 Wire Wire Line
 	5600 1700 5600 2100
-Wire Wire Line
-	5600 1700 5600 1300
-Connection ~ 5600 1700
 Text GLabel 5000 1700 2    10   BiDi ~ 0
 GND
 Wire Wire Line
@@ -96,14 +93,6 @@ Wire Wire Line
 Wire Wire Line
 	7400 5250 7400 5450
 Wire Wire Line
-	5900 4950 6050 4950
-Text GLabel 6050 4950 2    50   BiDi ~ 0
-ENAB_BURN4
-Wire Wire Line
-	5900 4750 6050 4750
-Text GLabel 6050 4750 2    50   BiDi ~ 0
-ENAB_BURN3
-Wire Wire Line
 	5900 4250 6050 4250
 Text GLabel 6050 4250 2    50   BiDi ~ 0
 TX
@@ -136,21 +125,13 @@ Wire Wire Line
 Text GLabel 6050 6150 2    50   BiDi ~ 0
 ENAB_BURN1
 Wire Wire Line
-	4700 4350 4600 4350
-Text GLabel 4600 4350 0    50   BiDi ~ 0
-I_BATT
-Wire Wire Line
 	5100 1900 5000 1900
 Wire Wire Line
 	4700 6250 4050 6250
 Wire Wire Line
-	4700 5650 4550 5650
-Text GLabel 4550 5650 0    50   BiDi ~ 0
+	5900 5550 6050 5550
+Text GLabel 6050 5550 2    50   BiDi ~ 0
 BURN_RELAY_A
-Wire Wire Line
-	4600 4450 4700 4450
-Text GLabel 4600 4450 0    50   BiDi ~ 0
-BURN_RELAY_B
 Wire Wire Line
 	4200 4650 4100 4650
 Text GLabel 4100 4650 0    50   BiDi ~ 0
@@ -158,27 +139,23 @@ L1_PROG
 Wire Wire Line
 	4700 4650 4600 4650
 Wire Wire Line
-	5900 4450 6050 4450
-Text GLabel 6050 4450 2    50   BiDi ~ 0
-ENAB_BURN5
-Wire Wire Line
 	5600 1300 5000 1300
 $Comp
 L mainboard:LSM9DS1 U?
-U 1 0 C6A83FC2
+U 1 1 C6A83FC2
 P 8000 6050
 AR Path="/C6A83FC2" Ref="U?"  Part="1" 
 AR Path="/5CEC5A72/C6A83FC2" Ref="U3"  Part="1" 
 F 0 "U3" H 7500 6800 59  0000 L CNN
 F 1 "LSM9DS1" H 7500 5300 59  0000 L CNN
-F 2 "kmb-test:LGA24-8X4" H 8000 6050 50  0001 C CNN
+F 2 "custom-footprints:LSM9DS1" H 8000 6050 50  0001 C CNN
 F 3 "" H 8000 6050 50  0001 C CNN
 	1    8000 6050
 	-1   0    0    -1  
 $EndComp
 $Comp
 L mainboard:10UF-6.3V-20%(0603) C?
-U 1 0 E7D47EA7
+U 1 1 E7D47EA7
 P 9500 5750
 AR Path="/E7D47EA7" Ref="C?"  Part="1" 
 AR Path="/5CEC5A72/E7D47EA7" Ref="C5"  Part="1" 
@@ -191,7 +168,7 @@ F 3 "" H 9500 5750 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:0.1UF-25V(+80_-20%)(0603) C?
-U 1 0 C8DDE19D
+U 1 1 C8DDE19D
 P 9300 5850
 AR Path="/C8DDE19D" Ref="C?"  Part="1" 
 AR Path="/5CEC5A72/C8DDE19D" Ref="C6"  Part="1" 
@@ -204,7 +181,7 @@ F 3 "" H 9300 5850 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:0.1UF-25V(+80_-20%)(0603) C?
-U 1 0 88676885
+U 1 1 88676885
 P 9100 5950
 AR Path="/88676885" Ref="C?"  Part="1" 
 AR Path="/5CEC5A72/88676885" Ref="C7"  Part="1" 
@@ -217,7 +194,7 @@ F 3 "" H 9100 5950 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:0.1UF-25V(+80_-20%)(0603) C?
-U 1 0 2BF069D8
+U 1 1 2BF069D8
 P 8700 6150
 AR Path="/2BF069D8" Ref="C?"  Part="1" 
 AR Path="/5CEC5A72/2BF069D8" Ref="C9"  Part="1" 
@@ -230,7 +207,7 @@ F 3 "" H 8700 6150 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:10NF_10000PF-50V-10%(0603) C?
-U 1 0 E69E6156
+U 1 1 E69E6156
 P 8900 6050
 AR Path="/E69E6156" Ref="C?"  Part="1" 
 AR Path="/5CEC5A72/E69E6156" Ref="C8"  Part="1" 
@@ -243,7 +220,7 @@ F 3 "" H 8900 6050 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:3.3V #SUPPLY?
-U 1 0 F54A36B8
+U 1 1 F54A36B8
 P 8800 5250
 AR Path="/F54A36B8" Ref="#SUPPLY?"  Part="1" 
 AR Path="/5CEC5A72/F54A36B8" Ref="#SUPPLY03"  Part="1" 
@@ -256,7 +233,7 @@ F 3 "" H 8800 5250 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:GND #GND?
-U 1 0 21137572
+U 1 1 21137572
 P 3600 2200
 AR Path="/21137572" Ref="#GND?"  Part="1" 
 AR Path="/5CEC5A72/21137572" Ref="#GND06"  Part="1" 
@@ -269,7 +246,7 @@ F 3 "" H 3600 2200 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:GND #GND?
-U 1 0 4877C9E2
+U 1 1 4877C9E2
 P 8700 6950
 AR Path="/4877C9E2" Ref="#GND?"  Part="1" 
 AR Path="/5CEC5A72/4877C9E2" Ref="#GND07"  Part="1" 
@@ -282,12 +259,12 @@ F 3 "" H 8700 6950 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:10KOHM-1_10W-1%(0603)0603 R?
-U 1 0 B13F4994
+U 1 1 B13F4994
 P 4400 4650
 AR Path="/B13F4994" Ref="R?"  Part="1" 
 AR Path="/5CEC5A72/B13F4994" Ref="R6"  Part="1" 
-F 0 "R6" H 4150 4609 59  0000 L BNN
-F 1 "10k" H 4150 4720 59  0000 L BNN
+F 0 "R6" H 4200 4650 59  0000 L BNN
+F 1 "10k" H 4450 4650 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4400 4650 50  0001 C CNN
 F 3 "" H 4400 4650 50  0001 C CNN
 	1    4400 4650
@@ -295,7 +272,7 @@ F 3 "" H 4400 4650 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:GND #GND?
-U 1 0 A606055F
+U 1 1 A606055F
 P 5600 2200
 AR Path="/A606055F" Ref="#GND?"  Part="1" 
 AR Path="/5CEC5A72/A606055F" Ref="#GND01"  Part="1" 
@@ -308,7 +285,7 @@ F 3 "" H 5600 2200 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:3.3V #SUPPLY?
-U 1 0 26B7FE90
+U 1 1 26B7FE90
 P 5600 1000
 AR Path="/26B7FE90" Ref="#SUPPLY?"  Part="1" 
 AR Path="/5CEC5A72/26B7FE90" Ref="#SUPPLY01"  Part="1" 
@@ -321,7 +298,7 @@ F 3 "" H 5600 1000 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:R-US_R0603 R?
-U 1 0 D5C8DAFA
+U 1 1 D5C8DAFA
 P 4050 6450
 AR Path="/D5C8DAFA" Ref="R?"  Part="1" 
 AR Path="/5CEC5A72/D5C8DAFA" Ref="R7"  Part="1" 
@@ -334,7 +311,7 @@ F 3 "" H 4050 6450 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:GND #GND?
-U 1 0 4ECAD228
+U 1 1 4ECAD228
 P 4050 6750
 AR Path="/4ECAD228" Ref="#GND?"  Part="1" 
 AR Path="/5CEC5A72/4ECAD228" Ref="#GND010"  Part="1" 
@@ -353,7 +330,7 @@ Wire Wire Line
 	3950 4250 4700 4250
 $Comp
 L mainboard:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue C?
-U 1 0 5CF0D226
+U 1 1 5CF0D226
 P 7050 3350
 AR Path="/5BCFDB7D/5CF0D226" Ref="C?"  Part="1" 
 AR Path="/5CF0D226" Ref="C?"  Part="1" 
@@ -367,7 +344,7 @@ F 3 "" H 7050 3350 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue C?
-U 1 0 5CF0D22C
+U 1 1 5CF0D22C
 P 6850 3350
 AR Path="/5BCFDB7D/5CF0D22C" Ref="C?"  Part="1" 
 AR Path="/5CF0D22C" Ref="C?"  Part="1" 
@@ -381,7 +358,7 @@ F 3 "" H 6850 3350 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue C?
-U 1 0 5CF0D232
+U 1 1 5CF0D232
 P 6650 3350
 AR Path="/5BCFDB7D/5CF0D232" Ref="C?"  Part="1" 
 AR Path="/5CF0D232" Ref="C?"  Part="1" 
@@ -401,7 +378,7 @@ Wire Wire Line
 	6300 3650 6300 3750
 $Comp
 L mainboard:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue C?
-U 1 0 5CF0D241
+U 1 1 5CF0D241
 P 3650 3250
 AR Path="/5BCFDB7D/5CF0D241" Ref="C?"  Part="1" 
 AR Path="/5CF0D241" Ref="C?"  Part="1" 
@@ -415,7 +392,7 @@ F 3 "" H 3650 3250 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:INDUCTOR-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue L?
-U 1 0 5CF0D253
+U 1 1 5CF0D253
 P 6100 3750
 AR Path="/5BCFDB7D/5CF0D253" Ref="L?"  Part="1" 
 AR Path="/5CF0D253" Ref="L?"  Part="1" 
@@ -453,7 +430,7 @@ Wire Wire Line
 	6000 3450 6000 3350
 $Comp
 L mainboard:SWITCH_TACT_SMT4.6X2.8-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue SW?
-U 1 0 5CF0D299
+U 1 1 5CF0D299
 P 2800 3150
 AR Path="/5BCFDB7D/5CF0D299" Ref="SW?"  Part="1" 
 AR Path="/5CF0D299" Ref="SW?"  Part="1" 
@@ -493,7 +470,7 @@ Wire Wire Line
 	5950 6750 5950 6900
 $Comp
 L mainboard:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue C?
-U 1 0 5CF0D2B6
+U 1 1 5CF0D2B6
 P 2700 3950
 AR Path="/5BCFDB7D/5CF0D2B6" Ref="C?"  Part="1" 
 AR Path="/5CF0D2B6" Ref="C?"  Part="1" 
@@ -507,7 +484,7 @@ F 3 "" H 2700 3950 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue C?
-U 1 0 5CF0D2BC
+U 1 1 5CF0D2BC
 P 2700 4250
 AR Path="/5BCFDB7D/5CF0D2BC" Ref="C?"  Part="1" 
 AR Path="/5CF0D2BC" Ref="C?"  Part="1" 
@@ -591,7 +568,7 @@ Wire Wire Line
 	3650 3150 4050 3150
 $Comp
 L mainboard:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue C?
-U 1 0 5CF0D39D
+U 1 1 5CF0D39D
 P 6450 3350
 AR Path="/5BCFDB7D/5CF0D39D" Ref="C?"  Part="1" 
 AR Path="/5CF0D39D" Ref="C?"  Part="1" 
@@ -642,7 +619,7 @@ L Device:R_US R5
 U 1 1 5CF0D409
 P 4300 6050
 F 0 "R5" V 4500 6100 50  0000 C CNN
-F 1 "680" V 4400 6100 50  0000 C CNN
+F 1 "1K" V 4400 6100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4340 6040 50  0001 C CNN
 F 3 "~" H 4300 6050 50  0001 C CNN
 	1    4300 6050
@@ -650,7 +627,7 @@ F 3 "~" H 4300 6050 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:LED0805_NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue D?
-U 1 0 5CF0D40F
+U 1 1 5CF0D40F
 P 3950 6050
 AR Path="/5BCFDB7D/5CF0D40F" Ref="D?"  Part="1" 
 AR Path="/5CF0D40F" Ref="D?"  Part="1" 
@@ -684,7 +661,7 @@ Text GLabel 4500 3450 0    50   BiDi ~ 0
 SWDIO
 $Comp
 L mainboard:3.3V #SUPPLY?
-U 1 0 5CFBCD54
+U 1 1 5CFBCD54
 P 6000 2700
 AR Path="/5CFBCD54" Ref="#SUPPLY?"  Part="1" 
 AR Path="/5CEC5A72/5CFBCD54" Ref="#SUPPLY04"  Part="1" 
@@ -697,7 +674,7 @@ F 3 "" H 6000 2700 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:3.3V #SUPPLY?
-U 1 0 5CFBFDCC
+U 1 1 5CFBFDCC
 P 4150 2700
 AR Path="/5CFBFDCC" Ref="#SUPPLY?"  Part="1" 
 AR Path="/5CEC5A72/5CFBFDCC" Ref="#SUPPLY02"  Part="1" 
@@ -710,7 +687,7 @@ F 3 "" H 4150 2700 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:GND #GND?
-U 1 0 5CFD3B99
+U 1 1 5CFD3B99
 P 5950 7000
 AR Path="/5CFD3B99" Ref="#GND?"  Part="1" 
 AR Path="/5CEC5A72/5CFD3B99" Ref="#GND08"  Part="1" 
@@ -723,7 +700,7 @@ F 3 "" H 5950 7000 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:GND #GND?
-U 1 0 5CFD48B4
+U 1 1 5CFD48B4
 P 3700 6150
 AR Path="/5CFD48B4" Ref="#GND?"  Part="1" 
 AR Path="/5CEC5A72/5CFD48B4" Ref="#GND05"  Part="1" 
@@ -736,7 +713,7 @@ F 3 "" H 3700 6150 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:GND #GND?
-U 1 0 5CFD4BD6
+U 1 1 5CFD4BD6
 P 7050 3950
 AR Path="/5CFD4BD6" Ref="#GND?"  Part="1" 
 AR Path="/5CEC5A72/5CFD4BD6" Ref="#GND09"  Part="1" 
@@ -750,7 +727,7 @@ $EndComp
 Connection ~ 7050 3850
 $Comp
 L mainboard:GND #GND?
-U 1 0 5CFD4F60
+U 1 1 5CFD4F60
 P 3650 3550
 AR Path="/5CFD4F60" Ref="#GND?"  Part="1" 
 AR Path="/5CEC5A72/5CFD4F60" Ref="#GND04"  Part="1" 
@@ -763,7 +740,7 @@ F 3 "" H 3650 3550 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:GND #GND?
-U 1 0 5CFD52FB
+U 1 1 5CFD52FB
 P 2600 5200
 AR Path="/5CFD52FB" Ref="#GND?"  Part="1" 
 AR Path="/5CEC5A72/5CFD52FB" Ref="#GND03"  Part="1" 
@@ -776,7 +753,7 @@ F 3 "" H 2600 5200 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:GND #GND?
-U 1 0 5CFD5573
+U 1 1 5CFD5573
 P 2600 3550
 AR Path="/5CFD5573" Ref="#GND?"  Part="1" 
 AR Path="/5CEC5A72/5CFD5573" Ref="#GND02"  Part="1" 
@@ -789,7 +766,7 @@ F 3 "" H 2600 3550 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:3.3V #SUPPLY?
-U 1 0 4F8E092B
+U 1 1 4F8E092B
 P 7100 5600
 AR Path="/4F8E092B" Ref="#SUPPLY?"  Part="1" 
 AR Path="/5CEC5A72/4F8E092B" Ref="#SUPPLY05"  Part="1" 
@@ -879,7 +856,7 @@ Wire Wire Line
 	3000 4250 3550 4250
 $Comp
 L mainboard:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue C?
-U 1 0 5D39F8DC
+U 1 1 5D39F8DC
 P 6250 3350
 AR Path="/5BCFDB7D/5D39F8DC" Ref="C?"  Part="1" 
 AR Path="/5D39F8DC" Ref="C?"  Part="1" 
@@ -906,7 +883,7 @@ Wire Wire Line
 	6650 3850 7050 3850
 $Comp
 L mainboard:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue C?
-U 1 0 5CF0D259
+U 1 1 5CF0D259
 P 6650 3750
 AR Path="/5BCFDB7D/5CF0D259" Ref="C?"  Part="1" 
 AR Path="/5CF0D259" Ref="C?"  Part="1" 
@@ -920,7 +897,7 @@ F 3 "" H 6650 3750 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue C?
-U 1 0 5CF0D24D
+U 1 1 5CF0D24D
 P 6450 3650
 AR Path="/5BCFDB7D/5CF0D24D" Ref="C?"  Part="1" 
 AR Path="/5CF0D24D" Ref="C?"  Part="1" 
@@ -934,7 +911,7 @@ F 3 "" H 6450 3650 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:3.3V #SUPPLY?
-U 1 0 5D35BA4E
+U 1 1 5D35BA4E
 P 3950 4250
 AR Path="/5D35BA4E" Ref="#SUPPLY?"  Part="1" 
 AR Path="/5CEC5A72/5D35BA4E" Ref="#SUPPLY0101"  Part="1" 
@@ -945,10 +922,6 @@ F 3 "" H 3950 4250 50  0001 C CNN
 	1    3950 4250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 4550 4700 4550
-Wire Wire Line
-	3900 4800 3900 4550
 Connection ~ 2600 5100
 Wire Wire Line
 	3150 4500 3250 4500
@@ -958,11 +931,11 @@ Connection ~ 3250 5100
 Wire Wire Line
 	3450 5100 3250 5100
 Wire Wire Line
-	3450 4800 3900 4800
+	3450 4800 3450 4550
 Connection ~ 3450 4800
 $Comp
 L mainboard:0.1UF-25V(+80_-20%)(0603) C?
-U 1 0 5D2972EA
+U 1 1 5D2972EA
 P 3450 5000
 AR Path="/5D2972EA" Ref="C?"  Part="1" 
 AR Path="/5CEC5A72/5D2972EA" Ref="C3"  Part="1" 
@@ -977,7 +950,7 @@ Wire Wire Line
 	3250 4800 3450 4800
 Wire Wire Line
 	3250 5100 2600 5100
-Text Label 3550 4800 0    40   ~ 0
+Text Label 3450 4550 0    40   ~ 0
 BATTERY
 Connection ~ 3250 4800
 $Comp
@@ -1040,15 +1013,11 @@ Wire Wire Line
 Text GLabel 6050 4850 2    47   Input ~ 0
 ~CHRG
 Text GLabel 6050 4550 2    50   BiDi ~ 0
-RF_IO0
+RF1_IO0
 Wire Wire Line
 	6050 4550 5900 4550
 Wire Wire Line
 	5900 5250 7400 5250
-Text Label 6700 5250 0    50   ~ 0
-SDA
-Text Label 6700 5350 0    50   ~ 0
-SCL
 Connection ~ 7150 5350
 Connection ~ 7400 5250
 Wire Wire Line
@@ -1062,7 +1031,7 @@ Wire Wire Line
 	7400 4950 7150 4950
 $Comp
 L mainboard:3.3V #SUPPLY?
-U 1 0 5D5D90F8
+U 1 1 5D5D90F8
 P 7150 4950
 AR Path="/5D5D90F8" Ref="#SUPPLY?"  Part="1" 
 AR Path="/5CEC5A72/5D5D90F8" Ref="#SUPPLY010"  Part="1" 
@@ -1139,12 +1108,12 @@ F 3 "~" H 10050 1850 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:3.3V #SUPPLY?
-U 1 0 5D370A56
+U 1 1 5D370A56
 P 10800 1450
 AR Path="/5D370A56" Ref="#SUPPLY?"  Part="1" 
 AR Path="/5CEC5A72/5D370A56" Ref="#SUPPLY0111"  Part="1" 
 F 0 "#SUPPLY0111" H 10800 1450 50  0001 C CNN
-F 1 "3.3V" H 10760 1590 59  0000 L BNN
+F 1 "3.3V" H 10700 1600 59  0000 L BNN
 F 2 "" H 10800 1450 50  0001 C CNN
 F 3 "" H 10800 1450 50  0001 C CNN
 	1    10800 1450
@@ -1152,7 +1121,7 @@ F 3 "" H 10800 1450 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:GND #GND?
-U 1 0 5D3722F9
+U 1 1 5D3722F9
 P 10800 1650
 AR Path="/5D3722F9" Ref="#GND?"  Part="1" 
 AR Path="/5CEC5A72/5D3722F9" Ref="#GND0101"  Part="1" 
@@ -1172,17 +1141,9 @@ Wire Wire Line
 Text GLabel 4600 4150 0    50   BiDi ~ 0
 DAC0
 Wire Wire Line
-	4700 5550 4600 5550
-Text GLabel 4600 5550 0    50   BiDi ~ 0
-PA16
-Wire Wire Line
-	5900 5450 6050 5450
-Text GLabel 6050 5450 2    50   BiDi ~ 0
-PB14
-Wire Wire Line
-	5900 5550 6050 5550
-Text GLabel 6050 5550 2    50   BiDi ~ 0
-PB15
+	4700 5650 4600 5650
+Text GLabel 4600 5650 0    50   BiDi ~ 0
+PA17
 $Comp
 L Connector_Generic:Conn_01x05 J9
 U 1 1 5D408200
@@ -1207,7 +1168,7 @@ Wire Wire Line
 Wire Wire Line
 	10250 2900 10350 2900
 Text GLabel 10350 2900 2    50   BiDi ~ 0
-PA16
+PA17
 Wire Wire Line
 	10250 2700 10350 2700
 $Comp
@@ -1223,7 +1184,7 @@ F 3 "~" H 9000 1350 50  0001 C CNN
 $EndComp
 $Comp
 L mainboard:GND #GND?
-U 1 0 5D4B6248
+U 1 1 5D4B6248
 P 9100 2000
 AR Path="/5D4B6248" Ref="#GND?"  Part="1" 
 AR Path="/5CEC5A72/5D4B6248" Ref="#GND0102"  Part="1" 
@@ -1279,22 +1240,16 @@ Connection ~ 9100 1800
 Wire Wire Line
 	9100 1800 9100 1900
 Wire Wire Line
-	4700 3250 4800 3250
-Wire Wire Line
 	4500 3250 4700 3250
-Connection ~ 4700 3250
-Wire Wire Line
-	4700 3150 4800 3150
 Wire Wire Line
 	4400 3150 4700 3150
-Connection ~ 4700 3150
 $Comp
 L mainboard:ATSAMD51J20A-AU-ATSAMD51J20A-AU-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue-SAM32-rescue U2
 U 1 1 5CF0D392
 P 5300 4950
 F 0 "U2" H 5450 7000 50  0000 C CNN
 F 1 "ATSAMD51J20A-AU" H 5450 6900 50  0000 C CNN
-F 2 "QFP50P1200X1200X120-64N" H 5300 4950 50  0001 L BNN
+F 2 "custom-footprints:QFP50P1200X1200X120-64N" H 5300 4950 50  0001 L BNN
 F 3 "Microchip" H 5300 4950 50  0001 L BNN
 F 4 "120MHZ 1024KB Flash 64 TQFP PKG inTray 85CTemp, 64 TQFP 10x10x1mm TRAY" H 5300 4950 50  0001 L BNN "Field4"
 F 5 "TQFP-64 Microchip" H 5300 4950 50  0001 L BNN "Field5"
@@ -1304,29 +1259,6 @@ F 8 "Unavailable" H 5300 4950 50  0001 L BNN "Field8"
 	1    5300 4950
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J10
-U 1 1 5D538CE6
-P 10050 3250
-F 0 "J10" H 10050 3450 50  0000 C CNN
-F 1 "Conn_01x03" H 9968 3476 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10050 3250 50  0001 C CNN
-F 3 "~" H 10050 3250 50  0001 C CNN
-	1    10050 3250
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	10250 3150 10350 3150
-Text GLabel 10350 3150 2    50   BiDi ~ 0
-DAC0
-Wire Wire Line
-	10250 3350 10350 3350
-Text GLabel 10350 3350 2    50   BiDi ~ 0
-PB14
-Wire Wire Line
-	10250 3250 10350 3250
-Text GLabel 10350 3250 2    50   BiDi ~ 0
-PB15
 Wire Wire Line
 	5900 5650 6050 5650
 Text GLabel 6050 5650 2    50   BiDi ~ 0
@@ -1350,20 +1282,16 @@ PA19
 Wire Wire Line
 	5900 6050 6050 6050
 Text GLabel 6050 6050 2    50   BiDi ~ 0
-RF_CS
+RF1_CS
 Wire Wire Line
 	5900 4050 6050 4050
 Text GLabel 6050 4050 2    50   BiDi ~ 0
-RF_RST
-Text GLabel 6050 4650 2    50   BiDi ~ 0
-RF_IO1
-Wire Wire Line
-	6050 4650 5900 4650
+RF1_RST
 $Comp
-L Device:R_US R?
+L Device:R_US R42
 U 1 1 5D3DC34B
 P 3350 1950
-F 0 "R?" H 3200 1900 50  0000 C CNN
+F 0 "R42" H 3200 1900 50  0000 C CNN
 F 1 "10k" H 3200 2000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3390 1940 50  0001 C CNN
 F 3 "~" H 3350 1950 50  0001 C CNN
@@ -1380,7 +1308,6 @@ Wire Wire Line
 NoConn ~ 5000 1500
 Wire Wire Line
 	5600 1300 5600 1000
-Connection ~ 5600 1300
 Wire Wire Line
 	3600 1700 3350 1700
 Connection ~ 3350 1700
@@ -1400,4 +1327,91 @@ NoConn ~ 7400 6350
 NoConn ~ 7400 6550
 NoConn ~ 7400 6650
 NoConn ~ 3600 1500
+Text GLabel 6050 4750 2    50   BiDi ~ 0
+RF2_BUSY
+Wire Wire Line
+	6050 4750 5900 4750
+Wire Wire Line
+	5900 4950 6050 4950
+Text GLabel 6050 4950 2    50   BiDi ~ 0
+RF2_CS
+Wire Wire Line
+	5900 5450 6050 5450
+Text GLabel 6050 5450 2    50   BiDi ~ 0
+RF2_RST
+$Comp
+L Connector_Generic:Conn_01x05 J10
+U 1 1 5DA30840
+P 10050 3400
+F 0 "J10" H 10050 3700 50  0000 C CNN
+F 1 "Conn_01x05" V 9968 3726 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 10050 3400 50  0001 C CNN
+F 3 "~" H 10050 3400 50  0001 C CNN
+	1    10050 3400
+	-1   0    0    -1  
+$EndComp
+Text GLabel 10400 3200 2    50   BiDi ~ 0
+DAC0
+Wire Wire Line
+	10400 3200 10250 3200
+Text GLabel 6050 5350 2    50   BiDi ~ 0
+SCL
+Text GLabel 6050 5250 2    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	5900 4450 6050 4450
+Text GLabel 6050 4450 2    50   BiDi ~ 0
+RF1_IO4
+Text GLabel 6050 4650 2    50   BiDi ~ 0
+RF2_IO1
+Wire Wire Line
+	5900 4650 6050 4650
+Wire Wire Line
+	4700 4350 4600 4350
+Text GLabel 4600 4350 0    50   BiDi ~ 0
+AIN4
+Wire Wire Line
+	4700 4450 4600 4450
+Text GLabel 4600 4450 0    50   BiDi ~ 0
+AIN5
+Text GLabel 10400 3300 2    50   BiDi ~ 0
+AIN4
+Wire Wire Line
+	10400 3300 10250 3300
+Text GLabel 10400 3400 2    50   BiDi ~ 0
+AIN5
+Wire Wire Line
+	10400 3400 10250 3400
+Wire Wire Line
+	3450 4550 4700 4550
+$Comp
+L mainboard:3.3V #SUPPLY?
+U 1 1 5DE0EDF6
+P 10400 3600
+AR Path="/5DE0EDF6" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5CEC5A72/5DE0EDF6" Ref="#SUPPLY0115"  Part="1" 
+F 0 "#SUPPLY0115" H 10400 3600 50  0001 C CNN
+F 1 "3.3V" V 10400 3750 59  0000 L BNN
+F 2 "" H 10400 3600 50  0001 C CNN
+F 3 "" H 10400 3600 50  0001 C CNN
+	1    10400 3600
+	0    1    -1   0   
+$EndComp
+$Comp
+L mainboard:GND #GND?
+U 1 1 5DE0EDFC
+P 10950 3600
+AR Path="/5DE0EDFC" Ref="#GND?"  Part="1" 
+AR Path="/5CEC5A72/5DE0EDFC" Ref="#GND0111"  Part="1" 
+F 0 "#GND0111" H 10950 3600 50  0001 C CNN
+F 1 "GND" H 10850 3500 59  0000 L BNN
+F 2 "" H 10950 3600 50  0001 C CNN
+F 3 "" H 10950 3600 50  0001 C CNN
+	1    10950 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 3500 10950 3500
+Wire Wire Line
+	10400 3600 10250 3600
 $EndSCHEMATC
