@@ -1,14 +1,13 @@
 EESchema Schematic File Version 4
-LIBS:mainboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr User 11693 8851
 encoding utf-8
 Sheet 4 6
 Title "PyCubed Mainboard"
-Date "2019-11-27"
+Date "2020-01-08"
 Rev "v04"
-Comp "Stanford University"
+Comp ""
 Comment1 "Zac Manchester"
 Comment2 "Max Holliday"
 Comment3 ""
@@ -35,9 +34,9 @@ Wire Wire Line
 Text GLabel 2850 5100 0    10   BiDi ~ 0
 GND
 Wire Wire Line
-	9250 3000 9250 2650
+	9700 3000 9700 2650
 Wire Wire Line
-	9250 2650 9550 2650
+	9700 2650 10000 2650
 Wire Wire Line
 	2300 1700 3000 1700
 Wire Wire Line
@@ -182,6 +181,8 @@ F 0 "U8" H 2100 5000 59  0000 L CNN
 F 1 "MR25H40MDF" H 2100 4900 59  0000 L CNN
 F 2 "mainboard:SON127P600X500X90-9N" H 1650 4700 50  0001 C CNN
 F 3 "" H 1650 4700 50  0001 C CNN
+F 4 "MR25H40MDF" H 1650 4700 50  0001 C CNN "Flight"
+F 5 "W25Q80DVSNIG" H 1650 4700 50  0001 C CNN "Proto"
 	1    1650 4700
 	1    0    0    -1  
 $EndComp
@@ -352,7 +353,7 @@ NoConn ~ 2300 2100
 NoConn ~ 2300 2300
 NoConn ~ 2300 2400
 NoConn ~ 2300 1400
-Text GLabel 9550 2650 2    50   BiDi ~ 0
+Text GLabel 10000 2650 2    50   BiDi ~ 0
 VBATT
 $Comp
 L power:GNDREF #PWR?
@@ -433,11 +434,7 @@ Connection ~ 4850 3500
 Wire Wire Line
 	4850 3500 7050 3500
 Wire Wire Line
-	7050 3500 7050 3250
-Wire Wire Line
 	7050 2000 5450 2000
-Wire Wire Line
-	7050 3000 7050 3250
 $Comp
 L Device:C_Small C?
 U 1 1 5DDEA628
@@ -696,4 +693,25 @@ F 3 "" H 1400 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7050 2000 7050 2800
+Wire Wire Line
+	7050 3000 7050 3500
+$Comp
+L mainboard:M023.5MM_LOCK JP?
+U 1 1 5DEA22AB
+P 9700 3300
+AR Path="/5DEA22AB" Ref="JP?"  Part="1" 
+AR Path="/5CEC60EB/5DEA22AB" Ref="JP1"  Part="1" 
+F 0 "JP1" H 9600 3530 59  0000 L BNN
+F 1 "M023.5MM_LOCK" V 9550 2950 59  0000 L BNN
+F 2 "mainboard:SCREWTERMINAL-3.5MM-2_LOCK" H 9700 3300 50  0001 C CNN
+F 3 "" H 9700 3300 50  0001 C CNN
+	1    9700 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9600 3000 9600 2850
+Wire Wire Line
+	9600 2850 9250 2850
+Wire Wire Line
+	9250 2850 9250 3000
 $EndSCHEMATC

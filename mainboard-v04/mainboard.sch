@@ -1,14 +1,13 @@
 EESchema Schematic File Version 4
-LIBS:mainboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 6
 Title "PyCubed Mainboard"
-Date "2019-11-27"
+Date "2020-01-08"
 Rev "v04"
-Comp "Stanford University"
+Comp ""
 Comment1 "Zac Manchester"
 Comment2 "Max Holliday"
 Comment3 ""

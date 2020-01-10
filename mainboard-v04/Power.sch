@@ -1,14 +1,13 @@
 EESchema Schematic File Version 4
-LIBS:mainboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 6
 Title "PyCubed Mainboard"
-Date "2019-11-27"
+Date "2020-01-08"
 Rev "v04"
-Comp "Stanford University"
+Comp ""
 Comment1 "Zac Manchester"
 Comment2 "Max Holliday"
 Comment3 ""
@@ -30,9 +29,7 @@ Wire Wire Line
 	1550 1300 1750 1300
 Text GLabel 1550 1300 0    10   BiDi ~ 0
 GND
-Wire Wire Line
-	2150 2700 2150 2800
-Text GLabel 2150 2700 0    10   BiDi ~ 0
+Text GLabel 2950 1800 0    10   BiDi ~ 0
 GND
 Wire Wire Line
 	3850 2400 3950 2400
@@ -143,12 +140,6 @@ Wire Wire Line
 Wire Wire Line
 	5450 2800 5450 2700
 Wire Wire Line
-	5450 2700 6050 2700
-Wire Wire Line
-	6050 2600 6050 2700
-Connection ~ 5450 2700
-Connection ~ 6050 2700
-Wire Wire Line
 	5250 2000 5300 2000
 Wire Wire Line
 	5300 2000 5300 1600
@@ -160,18 +151,11 @@ Wire Wire Line
 	2150 1300 2750 1300
 Connection ~ 2750 1600
 Wire Wire Line
-	2350 2400 2850 2400
+	3850 2300 3150 2300
 Wire Wire Line
-	2950 2300 2950 2400
+	3850 2100 3050 2100
 Wire Wire Line
-	3850 2300 2950 2300
-Connection ~ 2950 2300
-Wire Wire Line
-	3850 2100 2350 2100
-Wire Wire Line
-	2150 2400 2150 2000
-Wire Wire Line
-	2150 2000 3850 2000
+	3650 2000 3850 2000
 Wire Wire Line
 	5250 2300 5650 2300
 Wire Wire Line
@@ -190,28 +174,26 @@ Wire Wire Line
 Wire Wire Line
 	3050 2500 3050 2800
 Wire Wire Line
-	3050 2800 2850 2800
+	3050 2800 2700 2800
 Connection ~ 3050 2800
 Wire Wire Line
-	3850 2700 3550 2700
+	3850 2700 3700 2700
 Wire Wire Line
-	3550 2700 3550 1900
+	3700 2700 3700 2400
 Wire Wire Line
-	3850 2200 2850 2200
+	3850 2200 2700 2200
 Wire Wire Line
-	2850 2400 2850 2200
+	2700 2400 2700 2200
 Wire Wire Line
-	2850 2200 1850 2200
+	2700 2200 1850 2200
 Wire Wire Line
 	2150 1600 1850 1600
 Wire Wire Line
 	1850 1600 1850 2200
 Wire Wire Line
 	1850 2400 1850 2200
-Connection ~ 2850 2200
+Connection ~ 2700 2200
 Connection ~ 1850 2200
-Text GLabel 6550 2700 2    50   BiDi ~ 0
-VBATT
 Wire Wire Line
 	3000 4300 3000 4100
 Wire Wire Line
@@ -322,14 +304,14 @@ $EndComp
 $Comp
 L mainboard:GND #GND?
 U 1 1 8C4C494A
-P 2150 2900
+P 2950 1900
 AR Path="/8C4C494A" Ref="#GND?"  Part="1" 
 AR Path="/5CEC5DDE/8C4C494A" Ref="#GND015"  Part="1" 
-F 0 "#GND015" H 2150 2900 50  0001 C CNN
-F 1 "GND" H 2050 2800 59  0000 L BNN
-F 2 "" H 2150 2900 50  0001 C CNN
-F 3 "" H 2150 2900 50  0001 C CNN
-	1    2150 2900
+F 0 "#GND015" H 2950 1900 50  0001 C CNN
+F 1 "GND" H 2700 1900 59  0000 L BNN
+F 2 "" H 2950 1900 50  0001 C CNN
+F 3 "" H 2950 1900 50  0001 C CNN
+	1    2950 1900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -352,7 +334,7 @@ P 3250 2800
 AR Path="/99AF0EED" Ref="R?"  Part="1" 
 AR Path="/5CEC5DDE/99AF0EED" Ref="R12"  Part="1" 
 F 0 "R12" H 3100 2859 59  0000 L BNN
-F 1 "43K" H 3100 2670 59  0000 L BNN
+F 1 "121K" H 3100 2670 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3250 2800 50  0001 C CNN
 F 3 "" H 3250 2800 50  0001 C CNN
 	1    3250 2800
@@ -361,14 +343,14 @@ $EndComp
 $Comp
 L mainboard:R-US_R0603 R?
 U 1 1 69BCA27E
-P 2850 2600
+P 2700 2600
 AR Path="/69BCA27E" Ref="R?"  Part="1" 
 AR Path="/5CEC5DDE/69BCA27E" Ref="R11"  Part="1" 
-F 0 "R11" H 2700 2659 59  0000 L BNN
-F 1 "330K" H 2700 2470 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2850 2600 50  0001 C CNN
-F 3 "" H 2850 2600 50  0001 C CNN
-	1    2850 2600
+F 0 "R11" H 2550 2659 59  0000 L BNN
+F 1 "787K" H 2550 2470 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2700 2600 50  0001 C CNN
+F 3 "" H 2700 2600 50  0001 C CNN
+	1    2700 2600
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -378,7 +360,7 @@ P 1950 1300
 AR Path="/C507FD3A" Ref="R?"  Part="1" 
 AR Path="/5CEC5DDE/C507FD3A" Ref="R9"  Part="1" 
 F 0 "R9" H 1900 1100 59  0000 L BNN
-F 1 "100K" H 1800 1170 59  0000 L BNN
+F 1 "107K" H 1800 1170 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1950 1300 50  0001 C CNN
 F 3 "" H 1950 1300 50  0001 C CNN
 F 4 "DNI" H 1950 1400 50  0000 C CNN "DNI"
@@ -391,8 +373,8 @@ U 1 1 EE9F30D5
 P 2350 1600
 AR Path="/EE9F30D5" Ref="R?"  Part="1" 
 AR Path="/5CEC5DDE/EE9F30D5" Ref="R10"  Part="1" 
-F 0 "R10" H 2250 1350 59  0000 L BNN
-F 1 "40.2K" H 2200 1450 59  0000 L BNN
+F 0 "R10" H 2250 1450 59  0000 L BNN
+F 1 "0 or 464K" H 2100 1650 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2350 1600 50  0001 C CNN
 F 3 "" H 2350 1600 50  0001 C CNN
 	1    2350 1600
@@ -431,7 +413,7 @@ P 5950 2400
 AR Path="/9CD734CE" Ref="R?"  Part="1" 
 AR Path="/5CEC5DDE/9CD734CE" Ref="R20"  Part="1" 
 F 0 "R20" H 6000 2259 59  0000 L BNN
-F 1 "6.04K" H 5600 2270 59  0000 L BNN
+F 1 "3.01K" H 5600 2270 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5950 2400 50  0001 C CNN
 F 3 "" H 5950 2400 50  0001 C CNN
 	1    5950 2400
@@ -453,27 +435,27 @@ $EndComp
 $Comp
 L mainboard:2.2UF-0603-10V-20% C?
 U 1 1 FE784895
-P 2150 2600
+P 3050 1800
 AR Path="/FE784895" Ref="C?"  Part="1" 
 AR Path="/5CEC5DDE/FE784895" Ref="C23"  Part="1" 
-F 0 "C23" H 2210 2715 70  0000 L BNN
-F 1 "2.2uF" H 2210 2515 70  0000 L BNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2150 2600 50  0001 C CNN
-F 3 "" H 2150 2600 50  0001 C CNN
-	1    2150 2600
-	1    0    0    -1  
+F 0 "C23" V 3150 1900 70  0000 L BNN
+F 1 "2.2uF" V 3000 1900 70  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3050 1800 50  0001 C CNN
+F 3 "" H 3050 1800 50  0001 C CNN
+	1    3050 1800
+	0    1    1    0   
 $EndComp
 $Comp
 L mainboard:2.2NF_2200PF-0603-50V-10% C?
 U 1 1 BD6AC775
-P 2350 2300
+P 3050 2300
 AR Path="/BD6AC775" Ref="C?"  Part="1" 
 AR Path="/5CEC5DDE/BD6AC775" Ref="C25"  Part="1" 
-F 0 "C25" H 2410 2415 70  0000 L BNN
-F 1 "22nF" H 2410 2215 70  0000 L BNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2350 2300 50  0001 C CNN
-F 3 "" H 2350 2300 50  0001 C CNN
-	1    2350 2300
+F 0 "C25" H 2750 2300 70  0000 L BNN
+F 1 "22nF" H 2750 2200 70  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3050 2300 50  0001 C CNN
+F 3 "" H 3050 2300 50  0001 C CNN
+	1    3050 2300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -525,6 +507,8 @@ F 0 "U5" H 6464 5859 69  0000 L BNN
 F 1 "TPS54226PWPRPWP14_2P31X2P46-L" H 7500 6650 69  0000 R TNN
 F 2 "mainboard:PWP14_2P31X2P46-L" H 5250 6300 50  0001 C CNN
 F 3 "" H 5250 6300 50  0001 C CNN
+F 4 "TPS54226PWPRPWP14_2P31X2P46-L" H 5250 6300 50  0001 C CNN "Flight"
+F 5 "TPS54226PWPRPWP14_2P31X2P46-L" H 5250 6300 50  0001 C CNN "Proto"
 	1    5250 6300
 	-1   0    0    1   
 $EndComp
@@ -639,7 +623,7 @@ P 6150 6600
 AR Path="/416D5D6D" Ref="C?"  Part="1" 
 AR Path="/5CEC5DDE/416D5D6D" Ref="C27"  Part="1" 
 F 0 "C27" H 6210 6715 70  0000 L BNN
-F 1 "1.0uF" H 6210 6515 70  0000 L BNN
+F 1 "1uF" H 6210 6515 70  0000 L BNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6150 6600 50  0001 C CNN
 F 3 "" H 6150 6600 50  0001 C CNN
 	1    6150 6600
@@ -720,6 +704,8 @@ F 0 "Q1" H 9350 2250 59  0000 L TNN
 F 1 "IRLML2803" H 9350 2150 59  0000 L TNN
 F 2 "mainboard:SOT-23" H 9100 2200 50  0001 C CNN
 F 3 "" H 9100 2200 50  0001 C CNN
+F 4 "IRLML2803" H 9100 2200 50  0001 C CNN "Flight"
+F 5 "2302" H 9100 2200 50  0001 C CNN "Proto"
 	1    9100 2200
 	1    0    0    -1  
 $EndComp
@@ -750,32 +736,6 @@ F 3 "" H 2250 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mainboard:R-US_R0603 R?
-U 1 1 A8135784
-P 5850 2600
-AR Path="/A8135784" Ref="R?"  Part="1" 
-AR Path="/5CEC5DDE/A8135784" Ref="R19"  Part="1" 
-F 0 "R19" H 5700 2659 59  0000 L BNN
-F 1 "2.1M" H 5700 2770 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5850 2600 50  0001 C CNN
-F 3 "" H 5850 2600 50  0001 C CNN
-	1    5850 2600
-	-1   0    0    1   
-$EndComp
-$Comp
-L mainboard:R-US_R0603 R?
-U 1 1 705317A3
-P 5450 2500
-AR Path="/705317A3" Ref="R?"  Part="1" 
-AR Path="/5CEC5DDE/705317A3" Ref="R16"  Part="1" 
-F 0 "R16" H 5400 2559 59  0000 L BNN
-F 1 "845K" H 5400 2370 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5450 2500 50  0001 C CNN
-F 3 "" H 5450 2500 50  0001 C CNN
-	1    5450 2500
-	1    0    0    -1  
-$EndComp
-$Comp
 L mainboard:22UF-1210-16V-20% C?
 U 1 1 F3F07366
 P 2150 6300
@@ -802,17 +762,17 @@ F 3 "" H 1750 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 3250 4000 0    85   ~ 0
-Battery Current Sensor
+System Power Monitor
 Text Notes 9550 1100 0    85   ~ 0
 GPS Power
 Text Notes 3400 1050 0    85   ~ 0
-2s2P Li-Ion Battery Charging Circuit
+2s2P Li-Ion Battery Solar Charging Circuit
 Text Notes 3250 5300 0    85   ~ 0
 Regulator - 3.3V OUT
 Text Notes 1200 6100 0    42   ~ 0
 VBATT 4.5 to 18V
 Text Notes 6450 2550 0    35   ~ 0
-L1_PROG\nmonitors charge current using:\nIchrg=988*Vprog/Rprog\n
+L1_PROG\nmonitors charge current using:\nIchrg=988*Vprog/Rprog\n3.01K = 400mA max charge current\n
 Wire Wire Line
 	2150 6500 2750 6500
 Wire Wire Line
@@ -842,33 +802,31 @@ Connection ~ 10400 1800
 Wire Wire Line
 	10400 1800 10400 2000
 Wire Wire Line
-	6050 2700 6550 2700
-Wire Wire Line
 	5300 1600 2750 1600
 $Comp
 L Device:L L3
 U 1 1 5D252EF8
-P 3250 1900
-F 0 "L3" V 3069 1900 50  0000 C CNN
-F 1 "56uH" V 3160 1900 50  0000 C CNN
-F 2 "Inductor_SMD:L_1812_4532Metric" H 3250 1900 50  0001 C CNN
-F 3 "~" H 3250 1900 50  0001 C CNN
-	1    3250 1900
+P 3400 2400
+F 0 "L3" V 3350 2400 50  0000 C CNN
+F 1 "33uH" V 3450 2400 50  0000 C CNN
+F 2 "Inductor_SMD:L_1812_4532Metric" H 3400 2400 50  0001 C CNN
+F 3 "~" H 3400 2400 50  0001 C CNN
+	1    3400 2400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3100 1900 2950 1900
+	3250 2400 3150 2400
 Wire Wire Line
-	2950 1900 2950 2300
+	3150 2400 3150 2300
 Wire Wire Line
-	3400 1900 3550 1900
+	3550 2400 3700 2400
 $Comp
 L Device:L L2
 U 1 1 5D263627
 P 2100 5700
 F 0 "L2" V 2150 5700 50  0000 C CNN
 F 1 "3.3uH" V 2250 5700 50  0000 C CNN
-F 2 "Inductor_SMD:L_1812_4532Metric" H 2100 5700 50  0001 C CNN
+F 2 "custom-footprints:L_2141" H 2100 5700 50  0001 C CNN
 F 3 "~" H 2100 5700 50  0001 C CNN
 	1    2100 5700
 	0    1    1    0   
@@ -883,6 +841,8 @@ F 0 "U6" H 4550 2905 68  0000 C CNN
 F 1 "LTC4121" H 4550 2787 68  0000 C CNN
 F 2 "custom-footprints:QFN-16-PAD" H 4350 2300 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/4121fbc.pdf" H 4350 2300 50  0001 C CNN
+F 4 "LTC4121EUD" H 4350 2300 50  0001 C CNN "Flight"
+F 5 "LTC4121EUD" H 4350 2300 50  0001 C CNN "Proto"
 	1    4350 2300
 	1    0    0    -1  
 $EndComp
@@ -922,11 +882,13 @@ F 0 "U7" H 9850 2150 50  0000 L BNN
 F 1 "NDS8434" H 9700 1200 50  0000 L BNN
 F 2 "custom-footprints:NDS8434" H 9900 1700 50  0001 L BNN
 F 3 "" H 9900 1700 50  0001 L BNN
-F 4 "ON Semiconductor" H 9900 1700 50  0001 L BNN "Field4"
-F 5 "Unavailable" H 9900 1700 50  0001 L BNN "Field5"
-F 6 "None" H 9900 1700 50  0001 L BNN "Field6"
-F 7 "NDS8434" H 9900 1700 50  0001 L BNN "Field7"
-F 8 "SO-8 ON Semiconductor" H 9900 1700 50  0001 L BNN "Field8"
+F 4 "" H 9900 1700 50  0001 L BNN "Field4"
+F 5 "" H 9900 1700 50  0001 L BNN "Field5"
+F 6 "" H 9900 1700 50  0001 L BNN "Field6"
+F 7 "" H 9900 1700 50  0001 L BNN "Field7"
+F 8 "" H 9900 1700 50  0001 L BNN "Field8"
+F 9 "NDS8434" H 9900 1700 50  0001 C CNN "Flight"
+F 10 "DMP2022LSS-13" H 9900 1700 50  0001 C CNN "Proto"
 	1    9900 1700
 	1    0    0    -1  
 $EndComp
@@ -944,6 +906,8 @@ F 0 "D2" H 1300 2300 59  0000 L BNN
 F 1 "DFLS130L" H 1150 2000 59  0000 L BNN
 F 2 "mainboard:PWRDI-123" H 1300 2200 50  0001 C CNN
 F 3 "" H 1300 2200 50  0001 C CNN
+F 4 "DFLS130L" H 1300 2200 50  0001 C CNN "Flight"
+F 5 "DFLS130L" H 1300 2200 50  0001 C CNN "Proto"
 	1    1300 2200
 	1    0    0    -1  
 $EndComp
@@ -951,9 +915,6 @@ Wire Wire Line
 	1500 2200 1850 2200
 Text Label 1550 2200 0    50   ~ 0
 VCHRG_IN
-Connection ~ 2850 2400
-Wire Wire Line
-	2850 2400 2950 2400
 Text Notes 7600 3150 0    85   ~ 0
 USB (Boost) Charging for 2-cell Li-Ion
 Connection ~ 5450 3200
@@ -971,6 +932,8 @@ F 0 "U4" H 4000 3400 60  0000 C CNN
 F 1 "ADM1176-1ARMZ-R7" H 4000 2700 60  0000 C CNN
 F 2 "custom-footprints:ADM1176-1ARMZ-R7" H 4450 3990 60  0001 C CNN
 F 3 "" H 3250 3750 60  0000 C CNN
+F 4 "ADM1176-1ARMZ-R7" H 3250 3750 50  0001 C CNN "Flight"
+F 5 "ADM1176-1ARMZ-R7" H 3250 3750 50  0001 C CNN "Proto"
 	1    3250 3750
 	1    0    0    -1  
 $EndComp
@@ -1071,8 +1034,8 @@ U 1 1 5DAE831A
 P 5150 5000
 AR Path="/5CEC5A72/5DAE831A" Ref="R?"  Part="1" 
 AR Path="/5CEC5DDE/5DAE831A" Ref="R30"  Part="1" 
-F 0 "R30" H 5050 4950 50  0000 C CNN
-F 1 "10K" H 5050 5050 50  0000 C CNN
+F 0 "R30" H 5083 4954 50  0000 R CNN
+F 1 "10K" H 5083 5045 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5190 4990 50  0001 C CNN
 F 3 "~" H 5150 5000 50  0001 C CNN
 	1    5150 5000
@@ -1088,6 +1051,7 @@ F 0 "R29" V 5050 5250 50  0000 C CNN
 F 1 "0" V 4850 5250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4990 5240 50  0001 C CNN
 F 3 "~" H 4950 5250 50  0001 C CNN
+F 4 "DNI" V 4850 5350 50  0000 C CNN "DNI"
 	1    4950 5250
 	0    1    -1   0   
 $EndComp
@@ -1387,13 +1351,8 @@ F 1 "BQ25883RGER" H 8850 3850 50  0000 L CNN
 F 2 "QFN50P400X400X100-25N-D" H 9600 4950 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/bq25883.pdf?HQS=TI-null-null-mousermode-df-pf-null-wwe&DCM=yes&ref_url=https%3A%2F%2Fwww.mouser.co.uk%2F" H 9600 4850 50  0001 L CNN
 F 4 "Battery Management BQ25883RGE" H 9600 4750 50  0001 L CNN "Description"
-F 5 "1" H 9600 4650 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 9600 4550 50  0001 L CNN "Manufacturer_Name"
-F 7 "BQ25883RGER" H 9600 4450 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "595-BQ25883RGER" H 9600 4350 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-BQ25883RGER" H 9600 4250 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 9600 4150 50  0001 L CNN "RS Part Number"
-F 11 "" H 9600 4050 50  0001 L CNN "RS Price/Stock"
+F 5 "BQ25883RGER" H 9600 4450 50  0001 L CNN "Flight"
+F 6 "BQ25883RGER" H 9600 4050 50  0001 L CNN "Proto"
 	1    8550 4450
 	1    0    0    -1  
 $EndComp
@@ -1465,9 +1424,58 @@ THM
 Wire Wire Line
 	8200 5550 7950 5550
 Text Notes 3700 4500 0    50   ~ 0
-Add: 0x94
+Addr: 0x94
 Text Notes 5250 5300 0    35   ~ 0
 In the case of U5 failure, U4 disables\nregulator based on TIMER capacitor
 Text Notes 8850 7000 0    200  ~ 0
 Power
+Wire Wire Line
+	3150 2400 3050 2400
+Connection ~ 3150 2400
+Wire Wire Line
+	3650 2000 3650 1800
+Wire Wire Line
+	3650 1800 3250 1800
+Text Notes 2200 1250 0    35   ~ 0
+Populating R9/R10 sets turn-on\nvoltage to 12V (solar input). \nTune this to solar MPPT
+$Comp
+L mainboard:R-US_R0603 R?
+U 1 1 705317A3
+P 5450 2500
+AR Path="/705317A3" Ref="R?"  Part="1" 
+AR Path="/5CEC5DDE/705317A3" Ref="R16"  Part="1" 
+F 0 "R16" H 5400 2559 59  0000 L BNN
+F 1 "845K" H 5400 2370 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5450 2500 50  0001 C CNN
+F 3 "" H 5450 2500 50  0001 C CNN
+	1    5450 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard:R-US_R0603 R?
+U 1 1 A8135784
+P 5850 2600
+AR Path="/A8135784" Ref="R?"  Part="1" 
+AR Path="/5CEC5DDE/A8135784" Ref="R19"  Part="1" 
+F 0 "R19" H 5800 2500 59  0000 L BNN
+F 1 "2.1M" H 5750 2650 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5850 2600 50  0001 C CNN
+F 3 "" H 5850 2600 50  0001 C CNN
+	1    5850 2600
+	-1   0    0    1   
+$EndComp
+Connection ~ 5450 2700
+Wire Wire Line
+	6050 2600 6050 2700
+Wire Wire Line
+	5450 2700 6050 2700
+Connection ~ 6050 2700
+Text Notes 6150 2750 0    35   ~ 0
+Vfloat=8.2V
+Wire Wire Line
+	6050 2700 6550 2700
+Text GLabel 6550 2700 2    50   BiDi ~ 0
+VBATT
+Text Notes 2600 3050 0    35   ~ 0
+MPPT=75% Voc\nIf MPPT not wanted:\nR11=10k; R12=DNI
 $EndSCHEMATC

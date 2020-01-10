@@ -1,14 +1,13 @@
 EESchema Schematic File Version 4
-LIBS:mainboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr User 11693 8548
 encoding utf-8
 Sheet 2 6
 Title "PyCubed Mainboard"
-Date "2019-11-27"
+Date "2020-01-08"
 Rev "v04"
-Comp "Stanford University"
+Comp ""
 Comment1 "Zac Manchester"
 Comment2 "Max Holliday"
 Comment3 ""
@@ -276,7 +275,7 @@ F 0 "Q4" V 6650 1450 59  0000 L TNN
 F 1 "IRLML2803" V 6750 1450 59  0000 L TNN
 F 2 "mainboard:SOT-23" H 6500 1600 50  0001 C CNN
 F 3 "" H 6500 1600 50  0001 C CNN
-F 4 "IRLML2803" V 6500 1600 50  0001 C CNN "Proto"
+F 4 "2302" V 6500 1600 50  0001 C CNN "Proto"
 F 5 "IRLML2803" V 6500 1600 50  0001 C CNN "Flight"
 	1    6500 1600
 	0    1    1    0   
@@ -291,6 +290,8 @@ F 0 "Q5" V 6650 2300 59  0000 L TNN
 F 1 "IRLML2803" V 6750 2300 59  0000 L TNN
 F 2 "mainboard:SOT-23" H 6500 2550 50  0001 C CNN
 F 3 "" H 6500 2550 50  0001 C CNN
+F 4 "IRLML2803" H 6500 2550 50  0001 C CNN "Flight"
+F 5 "2302" H 6500 2550 50  0001 C CNN "Proto"
 	1    6500 2550
 	0    1    1    0   
 $EndComp
@@ -581,6 +582,8 @@ F 0 "D4" V 2400 1500 59  0000 L BNN
 F 1 "SBR2A40P1Q-7" V 2300 1500 59  0000 L BNN
 F 2 "mainboard:PWRDI-123" H 2300 1400 50  0001 C CNN
 F 3 "" H 2300 1400 50  0001 C CNN
+F 4 "SBR2A40P1Q-7" H 2300 1400 50  0001 C CNN "Flight"
+F 5 "SBR2A40P1Q-7" H 2300 1400 50  0001 C CNN "Proto"
 	1    2300 1400
 	0    -1   -1   0   
 $EndComp
@@ -617,11 +620,13 @@ F 0 "U19" H 7500 2450 50  0001 L BNN
 F 1 "NDS8434" H 7500 2450 50  0001 L BNN
 F 2 "custom-footprints:NDS8434" H 7500 2450 50  0001 L BNN
 F 3 "" H 7500 2450 50  0001 L BNN
-F 4 "ON Semiconductor" H 7500 2450 50  0001 L BNN "Field4"
-F 5 "Unavailable" H 7500 2450 50  0001 L BNN "Field5"
-F 6 "None" H 7500 2450 50  0001 L BNN "Field6"
-F 7 "NDS8434" H 7500 2450 50  0001 L BNN "Field7"
-F 8 "SO-8 ON Semiconductor" H 7500 2450 50  0001 L BNN "Field8"
+F 4 "" H 7500 2450 50  0001 L BNN "Field4"
+F 5 "" H 7500 2450 50  0001 L BNN "Field5"
+F 6 "" H 7500 2450 50  0001 L BNN "Field6"
+F 7 "" H 7500 2450 50  0001 L BNN "Field7"
+F 8 "" H 7500 2450 50  0001 L BNN "Field8"
+F 9 "NDS8434" H 7500 2450 50  0001 C CNN "Flight"
+F 10 "DMP2022LSS-13" H 7500 2450 50  0001 C CNN "Proto"
 	1    7500 2450
 	1    0    0    -1  
 $EndComp

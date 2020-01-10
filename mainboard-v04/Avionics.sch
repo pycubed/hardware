@@ -1,14 +1,13 @@
 EESchema Schematic File Version 4
-LIBS:mainboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr User 12117 8851
 encoding utf-8
 Sheet 6 6
 Title "PyCubed Mainboard"
-Date "2019-11-27"
+Date "2020-01-08"
 Rev "v04"
-Comp "Stanford University"
+Comp ""
 Comment1 "Zac Manchester"
 Comment2 "Max Holliday"
 Comment3 ""
@@ -110,7 +109,7 @@ P 4400 4650
 AR Path="/B13F4994" Ref="R?"  Part="1" 
 AR Path="/5CEC5A72/B13F4994" Ref="R6"  Part="1" 
 F 0 "R6" H 4200 4650 59  0000 L BNN
-F 1 "10k" H 4450 4650 59  0000 L BNN
+F 1 "4.7k" H 4450 4650 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4400 4650 50  0001 C CNN
 F 3 "" H 4400 4650 50  0001 C CNN
 	1    4400 4650
@@ -245,7 +244,7 @@ AR Path="/5CF0D253" Ref="L?"  Part="1"
 AR Path="/5CEC5A72/5CF0D253" Ref="L1"  Part="1" 
 F 0 "L1" H 6100 3850 42  0000 C CNN
 F 1 "10uH" H 6100 3690 42  0000 C CNN
-F 2 "Inductor_SMD:L_0806_2016Metric" H 6100 3750 50  0001 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6100 3750 50  0001 C CNN
 F 3 "https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_power_vls201610hbx-1_en.pdf" H 6100 3750 50  0001 C CNN
 	1    6100 3750
 	-1   0    0    -1  
@@ -634,6 +633,8 @@ F 0 "Y1" V 2954 4231 50  0000 L CNN
 F 1 "32.768kHz" V 3045 4231 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 3000 4100 50  0001 C CNN
 F 3 "~" H 3000 4100 50  0001 C CNN
+F 4 "ABS07-32.768KHZ-T" H 3000 4100 50  0001 C CNN "Flight"
+F 5 "ABS07-32.768KHZ-T" H 3000 4100 50  0001 C CNN "Proto"
 	1    3000 4100
 	0    1    1    0   
 $EndComp
@@ -841,9 +842,11 @@ L symbols:MAX708RESA-T U1
 U 1 1 5D6DE815
 P 5100 1400
 F 0 "U1" H 5900 1808 69  0000 C CNN
-F 1 "MAX706RS-T" H 5900 1688 69  0000 C CNN
+F 1 "MAX706RESA" H 5900 1688 69  0000 C CNN
 F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 5100 1400 50  0001 C CNN
 F 3 "" H 5100 1400 50  0001 C CNN
+F 4 "MAX706RESA" H 5100 1400 50  0001 C CNN "Flight"
+F 5 "MAX706RESA" H 5100 1400 50  0001 C CNN "Proto"
 	1    5100 1400
 	-1   0    0    -1  
 $EndComp
@@ -1027,7 +1030,9 @@ F 4 "120MHZ 1024KB Flash 64 TQFP PKG inTray 85CTemp, 64 TQFP 10x10x1mm TRAY" H 5
 F 5 "TQFP-64 Microchip" H 5300 4950 50  0001 L BNN "Field5"
 F 6 "None" H 5300 4950 50  0001 L BNN "Field6"
 F 7 "ATSAMD51J20A-AU" H 5300 4950 50  0001 L BNN "Field7"
-F 8 "Unavailable" H 5300 4950 50  0001 L BNN "Field8"
+F 8 "" H 5300 4950 50  0001 L BNN "Field8"
+F 9 "ATSAMD51J20A-AU" H 5300 4950 50  0001 C CNN "Flight"
+F 10 "ATSAMD51J20A-AU" H 5300 4950 50  0001 C CNN "Proto"
 	1    5300 4950
 	1    0    0    -1  
 $EndComp
@@ -1189,6 +1194,8 @@ F 0 "D1" H 2756 6096 50  0000 R CNN
 F 1 "WS2812B" H 2756 6005 50  0000 R CNN
 F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3150 5750 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3200 5675 50  0001 L TNN
+F 4 "WS2812B" H 3100 6050 50  0001 C CNN "Flight"
+F 5 "WS2812B" H 3100 6050 50  0001 C CNN "Proto"
 	1    3100 6050
 	-1   0    0    -1  
 $EndComp
@@ -1215,10 +1222,12 @@ F 1 "BMX160" H 9800 5024 50  0000 C CNN
 F 2 "BMX160" H 10250 4950 50  0001 L CNN
 F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMX160-DS000.pdf" H 10250 4850 50  0001 L CNN
 F 4 "IMUs - Inertial Measurement Units 9-axis (9DOF) Absolute Orientation MEMS Sensor" H 10250 4750 50  0001 L CNN "Description"
-F 5 "1" H 10250 4650 50  0001 L CNN "Height"
-F 6 "Bosch" H 10250 4550 50  0001 L CNN "Manufacturer_Name"
-F 7 "BMX160" H 10250 4450 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "262-BMX160" H 10250 4350 50  0001 L CNN "Mouser Part Number"
+F 5 "" H 10250 4650 50  0001 L CNN "Height"
+F 6 "" H 10250 4550 50  0001 L CNN "Manufacturer_Name"
+F 7 "" H 10250 4450 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 10250 4350 50  0001 L CNN "Mouser Part Number"
+F 9 "BMX160" H 9200 4850 50  0001 C CNN "Flight"
+F 10 "BMX160" H 9200 4850 50  0001 C CNN "Proto"
 	1    9200 4850
 	-1   0    0    -1  
 $EndComp

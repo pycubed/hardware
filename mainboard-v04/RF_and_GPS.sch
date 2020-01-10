@@ -1,14 +1,13 @@
 EESchema Schematic File Version 4
-LIBS:mainboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 6
 Title "PyCubed Mainboard"
-Date "2019-11-27"
+Date "2020-01-08"
 Rev "v04"
-Comp "Stanford University"
+Comp ""
 Comment1 "Zac Manchester"
 Comment2 "Max Holliday"
 Comment3 ""
@@ -99,6 +98,7 @@ F 0 "U14" H 7650 4500 59  0000 L BNN
 F 1 "S1216V8" H 8250 4500 59  0000 L BNN
 F 2 "mainboard:S1216_24PIN_PACKAGE" H 8150 5300 50  0001 C CNN
 F 3 "" H 8150 5300 50  0001 C CNN
+F 4 "DNI" H 8150 5300 50  0001 C CNN "DNI"
 	1    8150 5300
 	1    0    0    -1  
 $EndComp
@@ -151,6 +151,8 @@ F 0 "U13" H 9300 4100 50  0000 R TNB
 F 1 "EP2W+" H 9700 3700 50  0001 C CNN
 F 2 "mainboard:QFN32-5X5MM" H 9700 3700 50  0001 C CNN
 F 3 "" H 9700 3700 50  0001 C CNN
+F 4 "DNI" H 9700 3700 50  0001 C CNN "DNI"
+F 5 "EP2W+" H 9700 3700 50  0001 C CNN "Flight"
 	1    9700 3700
 	1    0    0    -1  
 $EndComp
@@ -232,6 +234,7 @@ F 0 "U10" H 2075 2415 50  0000 C CNN
 F 1 "XTB-40" H 2075 2324 50  0000 C CNN
 F 2 "custom-footprints:XTB28_MEZ" H 2100 1750 50  0001 C CNN
 F 3 "" H 2100 1750 50  0001 C CNN
+F 4 "DNI" H 2100 1750 50  0001 C CNN "DNI"
 	1    2100 1750
 	1    0    0    -1  
 $EndComp
@@ -314,6 +317,7 @@ F 0 "U12" H 4625 2465 50  0000 C CNN
 F 1 "XTB-40" H 4625 2374 50  0000 C CNN
 F 2 "custom-footprints:XTB28_MEZ" H 4650 1800 50  0001 C CNN
 F 3 "" H 4650 1800 50  0001 C CNN
+F 4 "DNI" H 4650 1800 50  0001 C CNN "DNI"
 	1    4650 1800
 	1    0    0    -1  
 $EndComp
@@ -396,6 +400,7 @@ F 0 "U9" H 2075 3815 50  0000 C CNN
 F 1 "XTB-40" H 2075 3724 50  0000 C CNN
 F 2 "custom-footprints:XTB28_MEZ" H 2100 3150 50  0001 C CNN
 F 3 "" H 2100 3150 50  0001 C CNN
+F 4 "DNI" H 2100 3150 50  0001 C CNN "DNI"
 	1    2100 3150
 	1    0    0    -1  
 $EndComp
@@ -478,6 +483,7 @@ F 0 "U11" H 4625 3865 50  0000 C CNN
 F 1 "XTB-40" H 4625 3774 50  0000 C CNN
 F 2 "custom-footprints:XTB28_MEZ" H 4650 3200 50  0001 C CNN
 F 3 "" H 4650 3200 50  0001 C CNN
+F 4 "DNI" H 4650 3200 50  0001 C CNN "DNI"
 	1    4650 3200
 	1    0    0    -1  
 $EndComp
@@ -646,7 +652,7 @@ F 0 "R46" H 9150 5450 59  0000 L BNN
 F 1 "0" H 9250 5400 59  0001 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9250 5350 50  0001 C CNN
 F 3 "" H 9250 5350 50  0001 C CNN
-F 4 "DNI" H 9250 5250 50  0000 C CNN "DNI"
+F 4 "" H 9250 5250 50  0000 C CNN "DNI"
 	1    9250 5350
 	1    0    0    -1  
 $EndComp
