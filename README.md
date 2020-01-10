@@ -18,6 +18,7 @@
 ## Interactive Bill of Materials 🛒
 - [mainboard-v01](https://pycubed.github.io/hardware/mainboard-v01)
 - [mainboard-v02](https://pycubed.github.io/hardware/mainboard-v02)
+- [mainboard-v04](https://pycubed.github.io/hardware/mainboard-v04)
 <br>
 
 ## Adaptations
