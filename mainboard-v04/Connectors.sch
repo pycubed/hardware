@@ -1,15 +1,15 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr User 11693 8851
+$Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 3 6
 Title "PyCubed Mainboard"
-Date "2020-01-08"
+Date "2020-02-10"
 Rev "v04"
-Comp ""
-Comment1 "Zac Manchester"
-Comment2 "Max Holliday"
+Comp "Max Holliday"
+Comment1 ""
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -72,7 +72,7 @@ SCK
 Wire Wire Line
 	2300 1500 2550 1500
 Text GLabel 2600 1500 2    50   BiDi ~ 0
-xSDCS
+SD_CS
 Wire Wire Line
 	8450 2750 8200 2750
 Wire Wire Line
@@ -86,8 +86,8 @@ U 1 1 1D5F55F3
 P 7900 2050
 AR Path="/1D5F55F3" Ref="JP?"  Part="1" 
 AR Path="/5CEC60EB/1D5F55F3" Ref="JP2"  Part="1" 
-F 0 "JP2" H 7800 2280 59  0000 L BNN
-F 1 "M023.5MM_LOCK" H 7800 1850 59  0000 L BNN
+F 0 "JP2" H 7600 2050 59  0000 L BNN
+F 1 "1985807" H 7400 2150 59  0000 L BNN
 F 2 "mainboard:SCREWTERMINAL-3.5MM-2_LOCK" H 7900 2050 50  0001 C CNN
 F 3 "" H 7900 2050 50  0001 C CNN
 	1    7900 2050
@@ -99,8 +99,8 @@ U 1 1 55623696
 P 7900 2650
 AR Path="/55623696" Ref="JP?"  Part="1" 
 AR Path="/5CEC60EB/55623696" Ref="JP3"  Part="1" 
-F 0 "JP3" H 7800 2880 59  0000 L BNN
-F 1 "M023.5MM_LOCK" H 7800 2450 59  0000 L BNN
+F 0 "JP3" H 7600 2600 59  0000 L BNN
+F 1 "1985807" H 7400 2700 59  0000 L BNN
 F 2 "mainboard:SCREWTERMINAL-3.5MM-2_LOCK" H 7900 2650 50  0001 C CNN
 F 3 "" H 7900 2650 50  0001 C CNN
 	1    7900 2650
@@ -112,8 +112,8 @@ U 1 1 6F37A4EE
 P 9250 3300
 AR Path="/6F37A4EE" Ref="JP?"  Part="1" 
 AR Path="/5CEC60EB/6F37A4EE" Ref="JP5"  Part="1" 
-F 0 "JP5" H 9150 3530 59  0000 L BNN
-F 1 "M023.5MM_LOCK" V 9100 2950 59  0000 L BNN
+F 0 "JP5" V 9350 3550 59  0000 L BNN
+F 1 "1985807" V 9250 3500 59  0000 L BNN
 F 2 "mainboard:SCREWTERMINAL-3.5MM-2_LOCK" H 9250 3300 50  0001 C CNN
 F 3 "" H 9250 3300 50  0001 C CNN
 	1    9250 3300
@@ -225,7 +225,7 @@ F 3 "" H 2850 5300 50  0001 C CNN
 	1    2850 5300
 	1    0    0    -1  
 $EndComp
-Text Notes 9250 3600 0    59   ~ 0
+Text Notes 8950 3700 0    59   ~ 0
 Footswitch Connections
 Text Notes 7850 1700 0    85   ~ 0
 Battery Terminals
@@ -264,6 +264,7 @@ F 0 "J2" H 2700 6950 50  0000 L CNN
 F 1 "Conn_01x05" H 2830 6601 50  0001 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2750 6650 50  0001 C CNN
 F 3 "~" H 2750 6650 50  0001 C CNN
+F 4 "DNI" H 2900 6650 50  0000 C CNB "DNI"
 	1    2750 6650
 	1    0    0    -1  
 $EndComp
@@ -347,7 +348,7 @@ Text GLabel 1500 4900 0    59   BiDi ~ 0
 FLASH_IO2
 Wire Wire Line
 	1500 4900 1650 4900
-Text Notes 8550 7550 0    200  ~ 0
+Text Notes 8550 6950 0    200  ~ 40
 Connectors
 NoConn ~ 2300 2100
 NoConn ~ 2300 2300
@@ -503,8 +504,8 @@ U 1 1 EDD14CA3
 P 8150 3700
 AR Path="/EDD14CA3" Ref="JP?"  Part="1" 
 AR Path="/5CEC60EB/EDD14CA3" Ref="JP4"  Part="1" 
-F 0 "JP4" H 8050 3930 59  0000 L BNN
-F 1 "M023.5MM_LOCK" H 7600 4050 59  0000 L BNN
+F 0 "JP4" H 7850 3650 59  0000 L BNN
+F 1 "1985807" H 7600 3750 59  0000 L BNN
 F 2 "mainboard:SCREWTERMINAL-3.5MM-2_LOCK" H 8150 3700 50  0001 C CNN
 F 3 "" H 8150 3700 50  0001 C CNN
 	1    8150 3700
@@ -518,23 +519,23 @@ Wire Wire Line
 	7850 3800 7850 3900
 Wire Wire Line
 	8450 3500 8450 2750
-Text Notes 7650 3150 0    59   ~ 0
+Text Notes 7500 3200 0    59   ~ 0
 Battery Thermal \nMonitor (optional)
 $Comp
 L Connector_Generic:Conn_01x01 J3
 U 1 1 5DECAB53
-P 7850 3300
-F 0 "J3" H 7850 3200 50  0000 C CNN
-F 1 "Conn_01x01" H 8150 3300 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7850 3300 50  0001 C CNN
-F 3 "~" H 7850 3300 50  0001 C CNN
-	1    7850 3300
+P 7800 3350
+F 0 "J3" H 7800 3250 50  0000 C CNN
+F 1 "Conn_01x01" H 8100 3350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7800 3350 50  0001 C CNN
+F 3 "~" H 7800 3350 50  0001 C CNN
+	1    7800 3350
 	-1   0    0    1   
 $EndComp
-Text GLabel 8150 3300 2    50   BiDi ~ 0
+Text GLabel 8100 3350 2    50   BiDi ~ 0
 THM
 Wire Wire Line
-	8050 3300 8150 3300
+	8000 3350 8100 3350
 Connection ~ 7850 3500
 Wire Wire Line
 	7850 3500 8450 3500
@@ -604,7 +605,7 @@ F 2 "custom-footprints:10118194-0001LF" H 4600 4050 50  0001 L BNN
 F 3 "Amphenol FCI" H 4600 4050 50  0001 L BNN
 F 4 "Micro Usb, 2.0 Type b, Rcpt, Smt" H 4600 4050 50  0001 L BNN "Field4"
 F 5 "10118194-0001LF" H 4600 4050 50  0001 L BNN "Field5"
-F 6 "DNI" H 4800 4000 50  0000 C CNN "DNI"
+F 6 "DNI" H 4800 4000 50  0000 C CNB "DNI"
 	1    4600 4050
 	-1   0    0    -1  
 $EndComp
@@ -701,8 +702,8 @@ U 1 1 5DEA22AB
 P 9700 3300
 AR Path="/5DEA22AB" Ref="JP?"  Part="1" 
 AR Path="/5CEC60EB/5DEA22AB" Ref="JP1"  Part="1" 
-F 0 "JP1" H 9600 3530 59  0000 L BNN
-F 1 "M023.5MM_LOCK" V 9550 2950 59  0000 L BNN
+F 0 "JP1" V 9800 3000 59  0000 L BNN
+F 1 "1985807" V 9700 2800 59  0000 L BNN
 F 2 "mainboard:SCREWTERMINAL-3.5MM-2_LOCK" H 9700 3300 50  0001 C CNN
 F 3 "" H 9700 3300 50  0001 C CNN
 	1    9700 3300
@@ -714,4 +715,10 @@ Wire Wire Line
 	9600 2850 9250 2850
 Wire Wire Line
 	9250 2850 9250 3000
+Text Notes 7000 6500 0    65   ~ 0
+NOTE: Components labeled "do not install" (DNI) are not populated by default
+Wire Notes Line
+	6950 6500 6950 6400
+Wire Notes Line
+	6950 6400 11200 6400
 $EndSCHEMATC
