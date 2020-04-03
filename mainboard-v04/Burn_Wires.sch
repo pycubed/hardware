@@ -1,15 +1,15 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr User 11693 8548
+$Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 5 6
 Title "PyCubed Mainboard"
-Date "2020-01-08"
+Date "2020-02-10"
 Rev "v04"
-Comp ""
-Comment1 "Zac Manchester"
-Comment2 "Max Holliday"
+Comp "Max Holliday"
+Comment1 ""
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -343,9 +343,10 @@ P 8500 1700
 AR Path="/A21E5090" Ref="JP?"  Part="1" 
 AR Path="/5CEC6476/A21E5090" Ref="JP11"  Part="1" 
 F 0 "JP11" H 8400 1930 59  0000 L BNN
-F 1 "M03POLAR_LOCK" V 8550 750 59  0001 L BNN
+F 1 "Conn_01x03" V 8550 750 59  0001 L BNN
 F 2 "mainboard:MOLEX-1X3_LOCK" H 8500 1700 50  0001 C CNN
 F 3 "" H 8500 1700 50  0001 C CNN
+F 4 "DNI" V 8500 1700 50  0000 C CNB "DNI"
 	1    8500 1700
 	0    -1   -1   0   
 $EndComp
@@ -356,9 +357,10 @@ P 8500 2650
 AR Path="/056852D9" Ref="JP?"  Part="1" 
 AR Path="/5CEC6476/056852D9" Ref="JP12"  Part="1" 
 F 0 "JP12" H 8400 2880 59  0000 L BNN
-F 1 "M03POLAR_LOCK" H 8400 2350 59  0001 L BNN
+F 1 "Conn_01x03" H 8400 2350 59  0001 L BNN
 F 2 "mainboard:MOLEX-1X3_LOCK" H 8500 2650 50  0001 C CNN
 F 3 "" H 8500 2650 50  0001 C CNN
+F 4 "DNI" V 8500 2650 50  0000 C CNB "DNI"
 	1    8500 2650
 	0    -1   -1   0   
 $EndComp
@@ -369,9 +371,10 @@ P 1700 5250
 AR Path="/C8B46213" Ref="JP?"  Part="1" 
 AR Path="/5CEC6476/C8B46213" Ref="JP13"  Part="1" 
 F 0 "JP13" H 1600 5480 59  0000 L BNN
-F 1 "M03POLAR_LOCK" H 1600 4950 59  0001 L BNN
+F 1 "Conn_01x03" H 1600 4950 59  0001 L BNN
 F 2 "mainboard:MOLEX-1X3_LOCK" H 1700 5250 50  0001 C CNN
 F 3 "" H 1700 5250 50  0001 C CNN
+F 4 "DNI" V 1700 5250 50  0000 C CNB "DNI"
 	1    1700 5250
 	0    -1   -1   0   
 $EndComp
@@ -382,9 +385,9 @@ P 4950 4150
 AR Path="/4861989B" Ref="JP?"  Part="1" 
 AR Path="/5CEC6476/4861989B" Ref="JP10"  Part="1" 
 F 0 "JP10" H 4850 4380 59  0000 L BNN
-F 1 "M03POLAR_LOCK" H 4850 3850 59  0000 L BNN
+F 1 "Conn_01x03" H 4850 3850 59  0000 L BNN
 F 2 "mainboard:MOLEX-1X3_LOCK" H 4950 4150 50  0001 C CNN
-F 3 "" H 4950 4150 50  0001 C CNN
+F 3 "DNI" H 4950 4150 50  0000 C CNB
 	1    4950 4150
 	1    0    0    -1  
 $EndComp
@@ -395,9 +398,10 @@ P 1550 4150
 AR Path="/FF5F0BF4" Ref="JP?"  Part="1" 
 AR Path="/5CEC6476/FF5F0BF4" Ref="JP8"  Part="1" 
 F 0 "JP8" H 1450 4380 59  0000 L BNN
-F 1 "M03POLAR_LOCK" H 1450 3850 59  0000 L BNN
+F 1 "Conn_01x03" H 1450 3850 59  0000 L BNN
 F 2 "mainboard:MOLEX-1X3_LOCK" H 1550 4150 50  0001 C CNN
 F 3 "" H 1550 4150 50  0001 C CNN
+F 4 "DNI" H 1550 4150 50  0000 C CNB "DNI"
 	1    1550 4150
 	1    0    0    -1  
 $EndComp
@@ -408,9 +412,10 @@ P 3150 4150
 AR Path="/2206741E" Ref="JP?"  Part="1" 
 AR Path="/5CEC6476/2206741E" Ref="JP9"  Part="1" 
 F 0 "JP9" H 3050 4380 59  0000 L BNN
-F 1 "M03POLAR_LOCK" H 3050 3850 59  0000 L BNN
+F 1 "Conn_01x03" H 3050 3850 59  0000 L BNN
 F 2 "mainboard:MOLEX-1X3_LOCK" H 3150 4150 50  0001 C CNN
 F 3 "" H 3150 4150 50  0001 C CNN
+F 4 "DNI" H 3150 4150 50  0000 C CNB "DNI"
 	1    3150 4150
 	1    0    0    -1  
 $EndComp
@@ -421,9 +426,10 @@ P 3250 5300
 AR Path="/357D3C8D" Ref="JP?"  Part="1" 
 AR Path="/5CEC6476/357D3C8D" Ref="JP14"  Part="1" 
 F 0 "JP14" H 3150 5530 59  0000 L BNN
-F 1 "M03POLAR_LOCK" H 3150 5000 59  0001 L BNN
+F 1 "Conn_01x03" H 3150 5000 59  0001 L BNN
 F 2 "mainboard:MOLEX-1X3_LOCK" H 3250 5300 50  0001 C CNN
 F 3 "" H 3250 5300 50  0001 C CNN
+F 4 "DNI" V 3250 5300 50  0000 C CNB "DNI"
 	1    3250 5300
 	0    -1   -1   0   
 $EndComp
@@ -525,9 +531,10 @@ P 5050 5300
 AR Path="/ADC4B3B7" Ref="JP?"  Part="1" 
 AR Path="/5CEC6476/ADC4B3B7" Ref="JP15"  Part="1" 
 F 0 "JP15" H 4950 5530 59  0000 L BNN
-F 1 "M03POLAR_LOCK" H 4950 5000 59  0001 L BNN
+F 1 "Conn_01x03" H 4950 5000 59  0001 L BNN
 F 2 "mainboard:MOLEX-1X3_LOCK" H 5050 5300 50  0001 C CNN
 F 3 "" H 5050 5300 50  0001 C CNN
+F 4 "DNI" V 5050 5300 50  0000 C CNB "DNI"
 	1    5050 5300
 	0    -1   -1   0   
 $EndComp
@@ -554,7 +561,7 @@ F 0 "Q2" H 2300 1800 59  0000 L BNN
 F 1 "2N5088" H 2300 1700 59  0000 L BNN
 F 2 "mainboard:SOT23" H 2200 1700 50  0001 C CNN
 F 3 "" H 2200 1700 50  0001 C CNN
-F 4 "2N5088" H 2200 1700 50  0001 C CNN "Proto"
+F 4 "S8050" H 2200 1700 50  0001 C CNN "Proto"
 F 5 "2N5088" H 2200 1700 50  0001 C CNN "Flight"
 	1    2200 1700
 	1    0    0    -1  
@@ -587,7 +594,7 @@ F 5 "SBR2A40P1Q-7" H 2300 1400 50  0001 C CNN "Proto"
 	1    2300 1400
 	0    -1   -1   0   
 $EndComp
-Text Notes 2700 1900 0    85   ~ 0
+Text Notes 2850 1900 0    85   ~ 0
 Power Relay A
 Text Notes 4500 800  0    85   ~ 0
 Burn Wire Control (Antenna Depolyment)
@@ -675,7 +682,7 @@ Connection ~ 7000 2350
 Wire Wire Line
 	7000 2350 7000 2150
 Connection ~ 6700 2150
-Text Notes 8600 7250 0    200  ~ 0
+Text Notes 8600 6950 0    200  ~ 40
 Burn Wires
 NoConn ~ 1600 4950
 NoConn ~ 3150 5000
@@ -683,4 +690,10 @@ NoConn ~ 4950 5000
 NoConn ~ 5250 4050
 NoConn ~ 3450 4050
 NoConn ~ 1850 4050
+Text Notes 7000 6500 0    65   ~ 0
+NOTE: Components labeled "do not install" (DNI) are not populated by default
+Wire Notes Line
+	6950 6500 6950 6400
+Wire Notes Line
+	6950 6400 11200 6400
 $EndSCHEMATC
