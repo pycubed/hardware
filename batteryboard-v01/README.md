@@ -3,7 +3,7 @@
 ## [⭐ See the PyCubed Battery page for more details](https://www.notion.so/maholli/PyCubed-4cbfac7e9b684852a2ab2193bd485c4d)
 
 <p align="middle">
-  <img width="500" src="https://github.com/pycubed/documentation/blob/master/images/PyCubed_batteryboard-v01.jpg">
+  <img width="700" src="https://github.com/pycubed/documentation/blob/master/images/PyCubed_batteryboard-v01.jpg">
 </p>
 
 2S3P Li-ion battery pack for CubeSat designs.
