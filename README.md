@@ -1,6 +1,8 @@
 # Hardware ⚙
-
-## [⭐ See the PyCubed Quick Start page for tutorials, design resources, and more!](https://www.notion.so/maholli/PyCubed-4cbfac7e9b684852a2ab2193bd485c4d)
+<br><br>
+## [All PyCubed Resources](https://www.notion.so/maholli/All-PyCubed-Resources-8738cab0dd0743239a3cde30c6066452)
+Tutorials, design resources, and more!
+<br>
 
 <p align="middle">
   <img width="500" src="https://github.com/pycubed/documentation/blob/master/images/PyCubed_mainboard-v02.png">
@@ -20,16 +22,8 @@
 - [mainboard-v02](https://pycubed.github.io/hardware/mainboard-v02)
 - [mainboard-v04](https://pycubed.github.io/hardware/mainboard-v04)
 <br>
-
-## Adaptations
-Started with the PyCubed mainboard and adapted it to fit your specific needs? Submit a pull request to have your design added to the [adaptations](adaptations) directory!
 <br>
 <br>
-<br>
-<br>
-
-# Help Wanted ❗
-See the issues tab for a list of tasks in need of YOUR ☝ help!
 <br>
 <br>
 <br>
