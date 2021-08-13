@@ -1,0 +1,115 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BC808_copy
+D 0.8A Ic, 25V Vce, PNP Transistor, SOT-23
+K PNP Transistor
+F http://www.fairchildsemi.com/ds/BC/BC807.pdf
+$ENDCMP
+#
+$CMP BC856BDW1
+D 100mA IC, 65V Vce, Dual PNP/PNP Transistors, SOT-363
+K PNP/PNP Transistor
+F http://www.onsemi.com/pub_link/Collateral/BC856BDW1T1-D.PDF
+$ENDCMP
+#
+$CMP BC856_copy
+D 0.1A Ic, 65V Vce, PNP Transistor, SOT-23
+K PNP transistor
+F http://www.fairchildsemi.com/ds/BC/BC856.pdf
+$ENDCMP
+#
+$CMP BC857BDW1
+D 100mA IC, 45V Vce, Dual PNP/PNP Transistors, SOT-363
+K PNP/PNP Transistor
+F http://www.onsemi.com/pub_link/Collateral/BC856BDW1T1-D.PDF
+$ENDCMP
+#
+$CMP BC857BS
+D 100mA IC, 45V Vce, Dual PNP/PNP Transistors, SOT-363
+K PNP/PNP Transistor
+F https://assets.nexperia.com/documents/data-sheet/BC857BS.pdf
+$ENDCMP
+#
+$CMP BC857_copy
+D 0.1A Ic, 45V Vce, PNP Transistor, SOT-23
+K PNP transistor
+F http://www.fairchildsemi.com/ds/BC/BC856.pdf
+$ENDCMP
+#
+$CMP BC858_copy
+D 0.1A Ic, 30V Vce, PNP Transistor, SOT-23
+K PNP transistor
+F http://www.fairchildsemi.com/ds/BC/BC856.pdf
+$ENDCMP
+#
+$CMP BC859_copy
+D 0.1A Ic, 30V Vce, PNP Small Signal Transistor, SOT-23
+K PNP Transistor
+F http://www.infineon.com/dgdl/Infineon-BC857SERIES_BC858SERIES_BC859SERIES_BC860SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541da0e3a1661
+$ENDCMP
+#
+$CMP BC860_copy
+D 0.1A Ic, 45V Vce, PNP Small Signal Transistor, SOT-23
+K PNP Transistor
+F http://www.infineon.com/dgdl/Infineon-BC857SERIES_BC858SERIES_BC859SERIES_BC860SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541da0e3a1661
+$ENDCMP
+#
+$CMP BSS138DWQ-7
+F https://www.diodes.com/assets/Datasheets/BSS138DWQ.pdf
+$ENDCMP
+#
+$CMP FFB3906
+D 200mA IC, 40V Vce, Dual PNP/PNP Transistors, SOT-363
+K PNP/PNP Transistor
+F https://www.fairchildsemi.com/datasheets/FF/FFB3906.pdf
+$ENDCMP
+#
+$CMP MBT3906DW1
+D 200mA IC, 40V Vce, Dual PNP/PNP Transistors, SOT-363
+K PNP/PNP Transistor
+F http://www.onsemi.com/pub_link/Collateral/MBT3906DW1T1-D.PDF
+$ENDCMP
+#
+$CMP MMBT2907
+D 0.8A Ic, 45V Vce, PNP Transistor, SOT-23
+K PNP Transistor
+F https://www.diodes.com/assets/Datasheets/ds30040.pdf
+$ENDCMP
+#
+$CMP MMBT3906_copy
+D -0.2A Ic, -40V Vce, Small Signal PNP Transistor, SOT-23
+K PNP Transistor
+F https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf
+$ENDCMP
+#
+$CMP MMDT2907
+D 600mA IC, 60V Vce, Dual PNP/PNP Transistors, SOT-363
+K PNP/PNP Transistor
+F https://www.diodes.com/assets/Datasheets/MMDT2907AQ.pdf
+$ENDCMP
+#
+$CMP MMDT3906
+D 200mA IC, 40V Vce, Dual PNP/PNP Transistors, SOT-363
+K PNP/PNP Transistor
+F http://www.diodes.com/_files/datasheets/ds30124.pdf
+$ENDCMP
+#
+$CMP MMDT5401
+D 200mA IC, 160V Vce, Dual PNP/PNP Transistors, SOT-363
+K PNP/PNP Transistor
+F http://www.diodes.com/_files/datasheets/ds30169.pdf
+$ENDCMP
+#
+$CMP PMBT3906YS
+D 200mA IC, 40V Vce, Dual PNP/PNP Transistors, SOT-363
+K PNP/PNP Transistor
+F https://assets.nexperia.com/documents/data-sheet/PMBT3906YS.pdf
+$ENDCMP
+#
+$CMP PUMT1
+D 100mA IC, 40V Vce, Dual PNP/PNP Transistors, SOT-363
+K PNP/PNP Transistor
+F https://assets.nexperia.com/documents/data-sheet/PUMT1.pdf
+$ENDCMP
+#
+#End Doc Library
