@@ -21,6 +21,7 @@ Tutorials, design resources, and more!
 - [mainboard-v01](https://pycubed.github.io/hardware/mainboard-v01)
 - [mainboard-v02](https://pycubed.github.io/hardware/mainboard-v02)
 - [mainboard-v04](https://pycubed.github.io/hardware/mainboard-v04)
+- [mainboard-v05](https://pycubed.github.io/hardware/mainboard-v05)
 <br>
 <br>
 <br>
