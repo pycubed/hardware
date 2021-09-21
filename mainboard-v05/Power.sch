@@ -368,10 +368,10 @@ P 5450 7350
 AR Path="/07A6364C" Ref="R?"  Part="1" 
 AR Path="/5CEC5DDE/07A6364C" Ref="R14"  Part="1" 
 F 0 "R14" H 5450 7150 59  0000 C CNN
-F 1 "22.1k" H 5450 7250 59  0000 C CNN
+F 1 "22.1K" H 5450 7250 59  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5450 7350 50  0001 C CNN
 F 3 "" H 5450 7350 50  0001 C CNN
-F 4 "22.1k 0603" H 5450 7250 50  0001 C CNN "Description"
+F 4 "22.1K 0603" H 5450 7250 50  0001 C CNN "Description"
 	1    5450 7350
 	-1   0    0    1   
 $EndComp
@@ -1019,10 +1019,10 @@ P 6350 5250
 AR Path="/5CEC5A72/5F1B44AB" Ref="R?"  Part="1" 
 AR Path="/5CEC5DDE/5F1B44AB" Ref="R49"  Part="1" 
 F 0 "R49" H 6282 5296 50  0000 R CNN
-F 1 "10K" H 6282 5205 50  0000 R CNN
+F 1 "100K" H 6282 5205 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6390 5240 50  0001 C CNN
 F 3 "" H 6350 5250 50  0001 C CNN
-F 4 "10K 0603" H 6282 5396 50  0001 C CNN "Description"
+F 4 "100K 0603" H 6282 5396 50  0001 C CNN "Description"
 	1    6350 5250
 	-1   0    0    -1  
 $EndComp
@@ -1033,10 +1033,10 @@ P 5950 5250
 AR Path="/5CEC5A72/5F1CA9D3" Ref="R?"  Part="1" 
 AR Path="/5CEC5DDE/5F1CA9D3" Ref="R47"  Part="1" 
 F 0 "R47" H 5882 5296 50  0000 R CNN
-F 1 "20K" H 5882 5205 50  0000 R CNN
+F 1 "200K" H 5882 5205 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5990 5240 50  0001 C CNN
 F 3 "" H 5950 5250 50  0001 C CNN
-F 4 "20K 0603" H 5882 5396 50  0001 C CNN "Description"
+F 4 "200K 0603" H 5882 5396 50  0001 C CNN "Description"
 	1    5950 5250
 	-1   0    0    -1  
 $EndComp
@@ -1047,10 +1047,10 @@ P 5600 5250
 AR Path="/5CEC5A72/5F1EA9B1" Ref="R?"  Part="1" 
 AR Path="/5CEC5DDE/5F1EA9B1" Ref="R30"  Part="1" 
 F 0 "R30" H 5667 5296 50  0000 L CNN
-F 1 "10K" H 5667 5205 50  0000 L CNN
+F 1 "100K" H 5667 5205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5640 5240 50  0001 C CNN
 F 3 "" H 5600 5250 50  0001 C CNN
-F 4 "10K 0603" H 5667 5396 50  0001 C CNN "Description"
+F 4 "100K 0603" H 5667 5396 50  0001 C CNN "Description"
 	1    5600 5250
 	-1   0    0    -1  
 $EndComp
@@ -1087,10 +1087,10 @@ P 5150 5250
 AR Path="/5CEC5A72/5F203452" Ref="R?"  Part="1" 
 AR Path="/5CEC5DDE/5F203452" Ref="R29"  Part="1" 
 F 0 "R29" H 5217 5296 50  0000 L CNN
-F 1 "10K" H 5217 5205 50  0000 L CNN
+F 1 "73.2K" H 5217 5205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5190 5240 50  0001 C CNN
 F 3 "" H 5150 5250 50  0001 C CNN
-F 4 "10K 0603" H 5217 5396 50  0001 C CNN "Description"
+F 4 "73.2K 0603" H 5217 5396 50  0001 C CNN "Description"
 	1    5150 5250
 	-1   0    0    -1  
 $EndComp
@@ -1445,7 +1445,7 @@ Text GLabel 8150 4650 0    50   BiDi ~ 0
 SDA_PWR
 Text GLabel 8150 4750 0    50   Input ~ 0
 SCL_PWR
-Text Label 4850 5600 0    50   ~ 0
+Text Label 4850 5700 0    50   ~ 0
 3V3_EN
 Text GLabel 4800 5100 0    50   BiDi ~ 0
 VBATT
@@ -1930,13 +1930,13 @@ Wire Wire Line
 Wire Wire Line
 	5950 5100 6350 5100
 Wire Wire Line
-	5150 5400 5150 5600
+	5150 5400 5150 5700
 Wire Wire Line
-	4850 6550 4850 5600
+	4850 6550 4850 5700
 Wire Wire Line
-	4850 5600 5150 5600
+	4850 5700 5150 5700
 Wire Wire Line
-	5150 5600 5150 5850
+	5150 5700 5150 5850
 Wire Wire Line
 	5600 5100 5950 5100
 Wire Wire Line
@@ -2085,7 +2085,7 @@ Connection ~ 6350 5600
 Connection ~ 5600 5400
 Connection ~ 5600 5100
 Connection ~ 5950 5100
-Connection ~ 5150 5600
+Connection ~ 5150 5700
 Connection ~ 5150 5100
 Connection ~ 5950 5600
 Connection ~ 5450 6050
@@ -2216,4 +2216,6 @@ Text Notes 3450 5050 0    35   ~ 0
 Alternative RF Regulator\nB/C of 2021 Chip Shortage
 Text Notes 3500 5800 0    35   ~ 0
 LOW = enabled\nOpposite polarity\nthan other RF reg.. 
+Text Notes 5100 5550 2    31   ~ 0
+Value is convenient,\nnot necessary. \n10K-80K would\nalso work for R29
 $EndSCHEMATC

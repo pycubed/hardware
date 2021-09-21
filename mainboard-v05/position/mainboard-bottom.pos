@@ -1,4 +1,4 @@
-### Module positions - created on 9/17/2021 6:19:19 PM ###
+### Module positions - created on 9/21/2021 3:58:40 PM ###
 ### Printed by Pcbnew version kicad (5.1.5)-3
 ## Unit = mm, Angle = deg.
 ## Side : bottom
@@ -44,8 +44,8 @@ R21       10K                   R_0603_1608Metric         -24.3170    13.5790   
 R22       4.7K                  R_0603_1608Metric         -24.3170    11.4200    0.0000  bottom
 R23       3.3K                  R_0603_1608Metric         -31.5849    13.2461  270.0000  bottom
 R24       10K                   R_0603_1608Metric         -34.6329    22.5171  270.0000  bottom
-R29       10K                   R_0603_1608Metric         -49.9999    59.9821    0.0000  bottom
-R30       10K                   R_0603_1608Metric         -49.9999    66.8401  180.0000  bottom
+R29       73.2K                 R_0603_1608Metric         -49.9999    59.9821    0.0000  bottom
+R30       100K                  R_0603_1608Metric         -49.9999    66.8401  180.0000  bottom
 R34       5.23K                 R_0603_1608Metric         -59.1439    85.4329    0.0000  bottom
 R35       30.1K                 R_0603_1608Metric         -62.8777    85.4329  180.0000  bottom
 R36       3.16K                 R_0603_1608Metric         -59.1439    83.0961  180.0000  bottom
@@ -53,8 +53,8 @@ R39       5.1K                  R_0603_1608Metric         -49.7205    85.2805  1
 R40       5.1K                  R_0603_1608Metric         -49.7205    86.5759    0.0000  bottom
 R41       10K                   R_0603_1608Metric         -56.9849    43.8571  180.0000  bottom
 R46       10K                   R_0603_1608Metric         -62.8777    87.1601  180.0000  bottom
-R47       20K                   R_0603_1608Metric         -49.9999    61.5061    0.0000  bottom
-R49       10K                   R_0603_1608Metric         -49.9999    73.6981  180.0000  bottom
+R47       200K                  R_0603_1608Metric         -49.9999    61.5061    0.0000  bottom
+R49       100K                  R_0603_1608Metric         -49.9999    73.6981  180.0000  bottom
 R51       10K                   R_0603_1608Metric         -36.9189    46.6471    0.0000  bottom
 R52       10K                   R_0603_1608Metric         -49.9999    72.1741    0.0000  bottom
 R71       680                   R_0603_1608Metric         -60.7949    56.8071    0.0000  bottom
