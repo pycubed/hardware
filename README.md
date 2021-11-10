@@ -14,7 +14,7 @@ Tutorials, design resources, and more!
   - 50 ohm controlled impedance design spec'd for FR408HR with 11 mils external and 10.7 mils interal trace widths.
   - See [PyCubed's 2019 SmallSat Paper](https://github.com/pycubed/documentation/blob/master/PyCubed_smallsat-paper.pdf) for more discussion on the stack-up.
 - Zipped, ready-to-order, gerber files can be found in the root of each revision directory. 
-- NOTE: PyCubed layout has been ported from Eagle to KiCad to maintain the open-source nature of the project. Visit [http://www.kicad-pcb.org/](http://www.kicad-pcb.org/) for more details on this layout tool.
+- NOTE: PyCubed layout has been ported from Eagle to KiCad to maintain the open-source nature of the project. Visit [http://www.kicad.org/](http://www.kicad.org/) for more details on this layout tool.
 <br>
 
 ## Change Log
