@@ -1,7 +1,7 @@
 # Hardware ⚙
 <br><br>
 <p align="middle">
-  <img width="800" src="https://pycubed.org/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc95ba34e-9eb3-4aa5-bd23-da25f7abf6d7%2Fmainboardv05_features.jpg?table=block&id=adeb3cd0-c74c-4223-a562-51715659f57c&spaceId=b07e7c70-4319-4375-9666-1b25f07e4aae&width=2960&userId=&cache=v2">
+  <img width="900" src="https://user-images.githubusercontent.com/29153441/150609408-b1664045-7207-4565-9e75-412631c86dd8.jpg">
 </p><br>
 
 ## [All PyCubed Resources](https://www.notion.so/maholli/All-PyCubed-Resources-8738cab0dd0743239a3cde30c6066452)
